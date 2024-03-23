@@ -27,6 +27,12 @@
     flex-wrap: wrap;
 }
 
+.cont-my-skill > div {
+    flex-basis: 33.33%;
+    padding: 10px;
+    box-sizing: border-box; /* Menghindari padding menambah lebar div */
+}
+
 .theskill {
     width: 400px;
     height: 100px;
