@@ -24,10 +24,11 @@
 .cont-my-skill {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .theskill {
-    width: 430px;
+    width: 400px;
     height: 100px;
     background-color: #0381ff;
     margin: 15px;
