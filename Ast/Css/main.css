@@ -1,0 +1,51 @@
+.center {
+    text-align: center;
+}
+
+.typing-container-h {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.typing-container-p {
+    text-align: center;
+    margin-top: -10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 50px;
+}
+
+#typing-text {
+    display: inline-block;
+    border-right: 2px solid #333; /* Garis imitasi kursor ketik */
+    padding-right: 8px;
+}
+
+.cont-my-skill {
+    display: flex;
+    justify-content: center;
+}
+
+.theskill {
+    width: 30%;
+    background-color: #0381ff;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.theskill h3 {
+    margin: 0;
+    margin-bottom: 7px;
+}
+
+.garislurus {
+    width: 25%;
+    height: 5px;
+    background-color: #0381ff;
+    color: transparent;
+    text-align: center;
+    justify-content: center;
+    margin: 60px;
+    border-radius: 6px;
+}

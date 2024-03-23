@@ -1,0 +1,27 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #ffffff;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #00567e;
+}
+
+main {
+    margin: 18px;
+    margin-top: 55px;
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-bottom: 17px;
+}
+
+h3 {
+    margin-bottom: 17px;
+}

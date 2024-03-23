@@ -1,0 +1,32 @@
+function toggleNavbar() {
+    var navbarLinks = document.getElementById('navbar-links');
+    navbarLinks.style.display = (navbarLinks.style.display === 'none' || navbarLinks.style.display === '') ? 'flex' : 'none';
+}
+
+function toggleSidebar() {
+    var sidebar = document.getElementById("sidebar");
+    if (sidebar.style.width === "200px") {
+        sidebar.style.width = "0";
+    } else {
+        sidebar.style.width = "200px";
+    }
+}
+
+
+
+const textToType = "WELCOME!";
+let index = 0;
+const typingTextElement = document.getElementById('typing-text');
+
+function typeText() {
+    typingTextElement.textContent = textToType.slice(0, index);
+
+    index++;
+
+    if (index > textToType.length) {
+        clearInterval(intervalId);
+    }
+}
+
+const intervalId = setInterval(typeText, 100);
+

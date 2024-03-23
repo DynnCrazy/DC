@@ -1,0 +1,66 @@
+.navbar {
+    background-color: #0381ff;
+    color: #fff;
+    width: 100%;
+    top: 0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 25px;
+    position: fixed;
+}
+
+.name {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.name-links {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.menu-icon {
+    margin-right: 2%;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    color: white;
+    left: 0;
+    margin-top: 55px;
+    background-color: #2a86e1;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 15px;
+    z-index: 2; /* Set z-index higher than navbar to overlap it */
+    height: 200px;
+    height: 100%;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.sidebar a {
+    padding: 5px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #e2e2e2;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f9f9f9;
+}
+
+.title-sidebar {
+    font-weight: bold;
+    color: white;
+}
