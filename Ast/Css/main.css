@@ -22,14 +22,14 @@
 }
 
 .cont-my-skill {
-    width: 100%;
+    width: 85%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .theskill {
-    width: 400px;
+    width: 380px;
     height: auto;
     background-color: #0381ff;
     margin: 15px;
@@ -49,6 +49,5 @@
     color: transparent;
     text-align: center;
     justify-content: center;
-    margin: 50px;
     border-radius: 6px;
 }

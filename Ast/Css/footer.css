@@ -1,8 +1,3 @@
-body{
-    margin:0;
-    overflow-x:hidden;
-}
-    
 .footer{
     background: #0381ff;
     padding:30px 0px;
@@ -12,7 +7,6 @@ body{
     
 .footer .row{
     width:100%;
-    margin:1% 0%;
     padding:0.6% 0%;
     color:#cbcbcb;
     font-size:0.8em;
