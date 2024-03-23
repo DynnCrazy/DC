@@ -1,14 +1,15 @@
 .navbar {
     background-color: #0381ff;
     color: #fff;
-    width: 100%;
     top: 0;
+    width: 100%;
     padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 25px;
     position: fixed;
+    overflow-x: hidden;
 }
 
 .name {
@@ -23,8 +24,9 @@
 }
 
 .menu-icon {
-    margin-right: 30px;
+    margin-right: 40px;
     cursor: pointer;
+    overflow-x: hidden;
     color: #ffffff;
 }
 
