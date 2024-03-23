@@ -6,7 +6,8 @@ body {
     color: #ffffff;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #00567e;
+    background-color: #00507e;
+    overflow-x: hidden;
 }
 
 main {
@@ -15,7 +16,7 @@ main {
 }
 
 p {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 h2 {
