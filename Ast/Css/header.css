@@ -3,6 +3,7 @@
     color: #fff;
     top: 0;
     width: 100%;
+    margin: 0;
     padding: 15px;
     display: flex;
     justify-content: space-between;
@@ -42,8 +43,6 @@
     transition: 0.5s;
     padding-top: 15px;
     z-index: 2; /* Set z-index higher than navbar to overlap it */
-    height: 200px;
-    height: 100%;
     display: inline-block;
     overflow: hidden;
 }
