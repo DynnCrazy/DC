@@ -2,6 +2,10 @@
     text-align: center;
 }
 
+.hidden {
+    display: none;
+}
+
 .typing-container-h {
     text-align: center;
     margin-top: 15px;
@@ -48,4 +52,39 @@
     text-align: center;
     justify-content: center;
     border-radius: 6px;
+}
+
+.the-project {
+    width: 85%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.myproject {
+    width: 400px;
+    height: auto;
+    background-color: #0381ff;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.myproject h3 {
+    margin: 0;
+    margin-bottom: 7px;
+}
+
+.myproject a {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.b-project-all {
+    color: white;
+    text-decoration: none;
+}
+
+.b-project-bots {
+    color: white;
+    text-decoration: none;
 }

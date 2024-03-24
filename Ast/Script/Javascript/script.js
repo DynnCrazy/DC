@@ -30,3 +30,8 @@ function typeText() {
 
 const intervalId = setInterval(typeText, 100);
 
+function toggleProject(divId) {
+    const div = document.getElementById(divId);
+    div.classList.toggle('hidden');
+}
+

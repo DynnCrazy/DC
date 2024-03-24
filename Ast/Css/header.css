@@ -25,6 +25,7 @@
 }
 
 .menu-icon {
+    margin-right: 7px;
     cursor: pointer;
     overflow-x: hidden;
     color: #ffffff;
