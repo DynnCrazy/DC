@@ -5,6 +5,8 @@ function toggleNavbar() {
 
 function toggleSidebar() {
     var sidebar = document.getElementById("sidebar");
+    var body = document.body;
+
     if (sidebar.style.width === "200px") {
         sidebar.style.width = "0";
     } else {

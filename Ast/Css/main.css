@@ -6,6 +6,10 @@
     display: none;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .typing-container-h {
     text-align: center;
     margin-top: 15px;
@@ -60,6 +64,11 @@
     flex-wrap: wrap;
 }
 
+.cont-my-project {
+    width: 85%;
+    justify-content: center;
+}
+
 .myproject {
     width: 400px;
     height: auto;
@@ -87,4 +96,8 @@
 .b-project-bots {
     color: white;
     text-decoration: none;
+}
+
+.bproject:hover {
+    text-decoration: underline;
 }
