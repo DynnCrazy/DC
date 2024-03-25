@@ -80,15 +80,31 @@
             <h2>My Project</h2>
             <br>
             <div class="row-button-project">
-                <a href="#project" onclick="toggleProject('all-project')" id="myallId" class="b-project-all bold bproject">All</a>&emsp;
-                <a href="#project" onclick="toggleProject('bots')" id="mybotsId" class="b-project-bots bold bproject">Bots</a>
+                <a href="#project" style="pointer-events: none;"  onclick="toggleProjectLink('all-project'); toggleProject('all-project');" id="all-project-link" class="b-project-all bold bproject">All</a>&emsp;
+                <a href="#project" onclick="toggleProjectLink('bots'); toggleProject('bots');" id="bots-link" class="b-project-bots bold bproject">Bots</a>
 
                 <div id="underline"></div>
             </div>
 
             <br>
+            <abbr title="Contoh ff">ff</abbr>
 
             <div class="cont-my-project">
+
+                <div class="the-project hidden" id="all-project">
+                    <div class="myproject">
+                        <h3>Memeinz</h3>
+                        Bot Discord dengan command meme, fun, minigames, criminal, utility, dan lain lain.
+                        <br><br>
+                        <a href="#">Invite</a>
+                    </div>
+                    <div class="myproject">
+                        <h3>Memeinz</h3>
+                        Bot Discord dengan command meme, fun, minigames, criminal, utility, dan lain lain.
+                        <br><br>
+                        <a href="#">Invite</a>
+                    </div>
+                </div>
 
                 <div class="the-project hidden" id="bots">
                     <div class="myproject">

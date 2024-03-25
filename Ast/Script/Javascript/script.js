@@ -1,7 +1,9 @@
-function toggleNavbar() {
-    var navbarLinks = document.getElementById('navbar-links');
-    navbarLinks.style.display = (navbarLinks.style.display === 'none' || navbarLinks.style.display === '') ? 'flex' : 'none';
-}
+// == Test
+// function toggleNavbar() {
+//    var navbarLinks = document.getElementById('navbar-links');
+//    navbarLinks.style.display = (navbarLinks.style.display === 'none' || navbarLinks.style.display === '') ? 'flex' : 'none';
+// }
+// == Masih pemula aku puh
 
 function toggleSidebar() {
     var sidebar = document.getElementById("sidebar");
@@ -31,6 +33,10 @@ function typeText() {
 }
 
 const intervalId = setInterval(typeText, 100);
+
+function toggleProjectLink(id) {
+    var abccccc = '1';
+}
 
 function toggleProject(divId) {
     const div = document.getElementById(divId);

@@ -10,6 +10,11 @@
     font-weight: bold;
 }
 
+.underline-red {
+    text-decoration: underline;
+    color: red;
+}
+
 .typing-container-h {
     text-align: center;
     margin-top: 15px;
@@ -67,11 +72,12 @@
 .cont-my-project {
     width: 85%;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .myproject {
-    width: 300px;
+    width: 400px;
     height: auto;
     background-color: #0381ff;
     margin: 15px;
@@ -94,6 +100,11 @@
     text-decoration: none;
 }
 
+.bproject {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
 .b-project-bots {
     color: white;
     text-decoration: none;
@@ -101,4 +112,17 @@
 
 .bproject:hover {
     text-decoration: underline;
+}
+
+
+/* Untuk Hp */
+@media only screen and (max-width: 767px) {
+    .myproject {
+        width: 200px;
+        height: auto;
+        background-color: #0381ff;
+        margin: 15px;
+        padding: 20px;
+        border-radius: 5px;
+    }
 }
