@@ -59,18 +59,19 @@
 }
 
 .the-project {
-    width: 85%;
+    width: 100%;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .cont-my-project {
-    width: 70%;
-    justify-content: center;
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .myproject {
-    width: 400px;
+    width: 300px;
     height: auto;
     background-color: #0381ff;
     margin: 15px;
