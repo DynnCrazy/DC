@@ -37,3 +37,4 @@ function toggleProject(divId) {
     div.classList.toggle('hidden');
 }
 
+console.log('Masih dalam tahap pengembangan...')

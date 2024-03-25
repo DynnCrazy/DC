@@ -48,7 +48,7 @@
     overflow: hidden;
 }
 
-.sidebar a {
+.sidebar-a {
     padding: 5px 15px;
     text-decoration: none;
     font-size: 20px;
@@ -57,11 +57,30 @@
     transition: 0.3s;
 }
 
-.sidebar a:hover {
+.sidebar-a:hover {
     color: #f9f9f9;
 }
 
 .title-sidebar {
     font-weight: bold;
     color: white;
+}
+
+.jarak-sidebar {
+    background-color: transparent;
+    color: transparent;
+    width: 50%;
+    height: 60%;
+}
+
+.bawah-sidebar {
+    padding: 5px 15px;
+    font-size: 10px;
+    color: #e2e2e2;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.bawah-sidebar:hover {
+    color: #f9f9f9;
 }
