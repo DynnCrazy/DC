@@ -1,8 +1,30 @@
 .thefooter {
-    background-color: blue;
+    background-color: #0381ff;
     width: 100%;
     height: 200px;
     text-align: center;
     align-items: center;
-    padding-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footeratas {
+    margin-top: 10px;
+}
+
+.footerbawah {
+    margin-top: 5%;
+}
+
+.logoinfooter {
+    font-size: 24px;
+}
+
+.jarak-di-fb {
+    width: 20px;
+    height: 35px;
+}
+
+.katadi-fb {
+    font-size: 12px;
 }
