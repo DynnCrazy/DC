@@ -69,8 +69,8 @@
 .jarak-sidebar {
     background-color: transparent;
     color: transparent;
-    width: 50%;
-    height: 60%;
+    width: 40%;
+    height: 55%;
 }
 
 .bawah-sidebar {
@@ -83,6 +83,12 @@
 
 .bawah-sidebar:hover {
     color: #f9f9f9;
+}
+
+.jarak-tipis-sb {
+    height: 15px;
+    width: 5px;
+    color: transparent;
 }
 
 .waktusidebar {
