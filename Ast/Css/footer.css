@@ -4,20 +4,29 @@
     height: 200px;
     text-align: center;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .footeratas {
     margin-top: 10px;
 }
 
+.footertengah {
+    margin-top: 3%;
+}
+
 .footerbawah {
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
 .logoinfooter {
     font-size: 24px;
+}
+
+.footertengah a {
+    text-decoration: none;
+    font-size: 14px;
 }
 
 .jarak-di-fb {

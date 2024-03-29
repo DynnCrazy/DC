@@ -84,3 +84,9 @@
 .bawah-sidebar:hover {
     color: #f9f9f9;
 }
+
+.waktusidebar {
+    color: #e5e5e5;
+    font-size: 10px;
+    padding: 5px 15px;
+}
