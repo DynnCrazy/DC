@@ -24,7 +24,6 @@
 }
 
 
-
 /* ========= */
 /* === WARNA */
 .red {
@@ -38,6 +37,9 @@
 }
 .black {
     color: black;
+}
+.mycolor {
+    color: #0079b6;
 }
 
 
@@ -76,6 +78,7 @@
     width: 400px;
     height: auto;
     background-color: #0381ff;
+    background-color: #0079b6;
     margin: 15px;
     padding: 20px;
     border-radius: 5px;
@@ -90,6 +93,7 @@
     width: 25%;
     height: 3px;
     background-color: #0381ff;
+    background-color: #0079b6;
     color: transparent;
     text-align: center;
     justify-content: center;
@@ -114,6 +118,7 @@
     width: 400px;
     height: auto;
     background-color: #0381ff;
+    background-color: #0079b6;
     margin: 15px;
     padding: 20px;
     border-radius: 5px;
@@ -155,6 +160,7 @@
         width: 200px;
         height: auto;
         background-color: #0381ff;
+        background-color: #0079b6;
         margin: 15px;
         padding: 20px;
         border-radius: 5px;

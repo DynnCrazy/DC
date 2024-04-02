@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
 html {
     scroll-behavior: smooth;
 }
@@ -5,13 +7,14 @@ html {
 body {
     color: #e5e5e5;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     width: 100%;
     background-position: center;
     background-size: 100%;
     background-color: #003a53;
     background-color: #005174d9;
+    background-color: rgb(14, 14, 14);
 }
 
 a {
@@ -48,6 +51,7 @@ h3 {
 
 ::-webkit-scrollbar-thumb {
     background-color: #0381ff;
+    background-color: #0079b6;
     border-radius: 20px;
     border: 6px solid transparent;
     background-clip: content-box;
