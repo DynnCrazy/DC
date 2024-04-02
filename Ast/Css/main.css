@@ -153,6 +153,15 @@
     text-decoration: underline;
 }
 
+.cntindex {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.cntindex img {
+    margin-right: 50px;
+}
 
 /* Untuk Hp */
 @media only screen and (max-width: 767px) {

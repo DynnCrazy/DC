@@ -19,23 +19,6 @@ function toggleSidebar() {
 var copyright = document.getElementById('ftrcopy');
 copyright.innerHTML = "Copyright 2024 | Design by Dyn Crazy"
 
-
-const textToType = "WELCOME!";
-let index = 0;
-const typingTextElement = document.getElementById('typing-text');
-
-function typeText() {
-    typingTextElement.textContent = textToType.slice(0, index);
-
-    index++;
-
-    if (index > textToType.length) {
-        clearInterval(intervalId);
-    }
-}
-
-const intervalId = setInterval(typeText, 100);
-
 function toggleProjectLink(id) {
     var abccccc = '1';
 }
