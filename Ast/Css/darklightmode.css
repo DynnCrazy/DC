@@ -1,0 +1,21 @@
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* =====  Dark Mode Styles */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+/* =====  Light Mode Styles */
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+body.light-mode a {
+    color: #000000;
+}
+body.light-mode a:hover {
+    color: #292929;
+}

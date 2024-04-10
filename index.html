@@ -9,39 +9,50 @@
     <meta name="robots" content="index, follow">  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <!-- Opt -->
     <link rel="stylesheet" href="Ast/Css/style.css">
     <link rel="stylesheet" href="Ast/Css/header.css">
     <link rel="stylesheet" href="Ast/Css/main.css">
     <link rel="stylesheet" href="Ast/Css/footer.css">
+    <link rel="stylesheet" href="Ast/Css/darklightmode.css">
     <script src="Ast/Script/Javascript/script.js" defer></script>
 </head>
 <body>
     <header id="topWeb">  
         <div class="navbar" id="navbar">
             <span class="name"><a href="index.html" class="name-links">Dyn Crazy</a></span>
-            <span id="menu-icon" onclick="toggleSidebar()" class="menu-icon">&#9776;</span>
+            <span class="menu-icon"><span id="logolandd" onclick="xoggleMode()"><i class="fa fa-moon-o"></i></span>&emsp;<span id="menu-icon" onclick="toggleSidebar()">&#9776;</span></span>
         </div>
         <div id="btmsbar" class="btmnavbar">.</div>
         <div class="sidebar" id="sidebar">
-            <a href="index.html" onclick="toggleSidebar()" id="sidebar1" class="sidebar-a">Main Menu</a>
-            <a href="#skill" onclick="toggleSidebar()" id="sidebar2" class="sidebar-a">My Skill</a>
-            <a href="#project" onclick="toggleSidebar()" id="sidebar3" class="sidebar-a">Project</a>
-            <a href="about.html" id="sidebar4" class="sidebar-a">About</a>
-            <a onclick="toggleSidebar()" id="sidebar4" class="sidebar-a" style="cursor: pointer;">Tutup</a>
+            <a href="index.html" onclick="toggleSidebar()" id="sidebar1" class="sidebar-a"><i class="fas fa-home icon-in-sidebar"></i>&ensp; Main Menu</a>
+            <a href="#skill" onclick="toggleSidebar()" id="sidebar2" class="sidebar-a"><i class="fas fa-star icon-in-sidebar"></i>&ensp; My Skill</a>
+            <a href="#project" onclick="toggleSidebar()" id="sidebar3" class="sidebar-a"><i class="fas fa-folder-open icon-in-sidebar"></i>&ensp; Project</a>
+            <a href="about.html" id="sidebar4" class="sidebar-a"><i class="fas fa-exclamation-circle icon-in-sidebar"></i>&ensp; About</a>
+            <a onclick="openSearchCont()" id="sidebar5" class="sidebar-a" style="cursor: pointer;"><i class="fa fa-search icon-in-sidebar"></i>&ensp; Search</a>
+            <a onclick="toggleSidebar()" id="sidebar6" class="sidebar-a" style="cursor: pointer;"><i class="fa fa-close" icon-in-sidebar"></i>&ensp; Tutup</a>
+        </div>
+        <div class="search-div" id="searchDiv">
+            tetttt
+            <a href="#topWeb" onclick="closeSearchCont()">Tutup</a>
+            <br>
+            <br>
         </div>
     </header>
 
     <main id="centerWeb">
         <div class="cntindex">
-            <img src="Ast/Image/dc-logo-png.png" style="width: 200px; margin-left: 5%;" >
+            <img src="Ast/Image/dc-logo-png.png" class="img-in-index-first" >
             <h1 style="text-align: center; margin-top: -70px;" class="mycolor">Game Adalah Sumber Hiburan</h1>
         </div>
         <p class="center" style="margin-top: -100px; margin-left: 280px;">Perkenalkan nama saya Dyn Crazy. Saya berasal dari Bali, Indonesia. Saya suka main game, membuat kode, bikin video, dll.</p>
+        <br><br>
 
         <center>
             <br><br>
-            <div class="garislurus" id="skill">.</div>
-            <br><br>
+            <div class="garislurus">.</div>
+            <br><br id="skill">
         </center>
 
         <center>
@@ -72,8 +83,8 @@
 
         <center>
             <br><br>
-            <div class="garislurus" id="project">.</div>
-            <br><br>
+            <div class="garislurus">.</div>
+            <br><br id="project">
         </center>
 
         <center>
