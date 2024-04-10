@@ -163,13 +163,27 @@
     margin-right: 50px;
 }
 
-.img-in-index-first {
+.img-index-one {
     width: 200px;
     margin-left: 5%;
 }
+.h1-index-one {
+    text-align: center;
+    margin-top: -70px;
+}
+.cont-p-index-one {
+    width: 100%;
+    text-align: center;
+}
+.p-index-one {
+    margin-top: -100px;
+    margin-left: 280px;
+}
+
 
 /* === Untuk Hp === */
 @media only screen and (max-width: 767px) {
+
     .myproject {
         width: 200px;
         height: auto;
@@ -179,7 +193,23 @@
         padding: 20px;
         border-radius: 5px;
     }
-    .img-in-index-first {
-        width: 125px;
+    .img-index-one {
+        width: 150px;
+        margin-top: -50px;
+    }
+    .h1-index-one {
+        text-align: center;
+        margin-top: -40px;
+        margin-left: -45px;
+    }
+    .cont-p-index-one {
+        width: 85%;
+        padding: 25px;
+        text-align: center;
+    }
+    .p-index-one {
+        padding-top: 100px;
+        text-align: center;
+        display: contents;
     }
 }
