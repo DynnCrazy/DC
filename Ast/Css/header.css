@@ -29,9 +29,12 @@
 
 .menu-icon {
     margin-right: 15px;
-    cursor: pointer;
     overflow-x: hidden;
     color: #ffffff;
+}
+
+.inilink {
+    cursor: pointer;
 }
 
 .btmnavbar {

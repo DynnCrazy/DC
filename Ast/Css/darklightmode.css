@@ -19,3 +19,47 @@ body.light-mode a {
 body.light-mode a:hover {
     color: #292929;
 }
+body.light-mode .name-links {
+    color: #0095ff;
+}
+body.light-mode .menu-icon {
+    color: #0095ff;
+}
+body.light-mode .thefooter {
+    color: #e5e5e5;
+}
+body.light-mode .thefooter a {
+    color: #e5e5e5;
+}
+body.light-mode .img-index-one {
+    background-color: black;
+    border-radius: 50%;
+}
+body.light-mode .sidebar {
+    color: #e5e5e5;
+    box-shadow: none;
+}
+body.light-mode .sidebar-a {
+    color: #e5e5e5;
+}
+body.light-mode .sidebar-a:hover {
+    color: white;
+}
+body.light-mode .theskill {
+    color: #e5e5e5;
+}
+body.light-mode .theskill h3 {
+    color: white;
+}
+body.light-mode .myproject {
+    color: #e5e5e5;
+}
+body.light-mode .myproject h3 {
+    color: white;
+}
+body.light-mode .myproject a {
+    color: #e5e5e5;
+}
+body.light-mode .myproject a:hover {
+    color: white;
+}
