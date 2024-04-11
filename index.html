@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="Ast/Css/footer.css">
     <link rel="stylesheet" href="Ast/Css/darklightmode.css">
     <script src="Ast/Script/Javascript/script.js" defer></script>
+    <script src="Ast/Script/Javascript/search.js" defer></script>
 </head>
 <body>
     <header id="topWeb">  
@@ -29,15 +30,21 @@
             <a href="index.html" onclick="toggleSidebar()" id="sidebar1" class="sidebar-a"><i class="fas fa-home icon-in-sidebar"></i>&ensp; Main Menu</a>
             <a href="#skill" onclick="toggleSidebar()" id="sidebar2" class="sidebar-a"><i class="fas fa-star icon-in-sidebar"></i>&ensp; My Skill</a>
             <a href="#project" onclick="toggleSidebar()" id="sidebar3" class="sidebar-a"><i class="fas fa-folder-open icon-in-sidebar"></i>&ensp; Project</a>
-            <a href="about.html" id="sidebar4" class="sidebar-a"><i class="fas fa-exclamation-circle icon-in-sidebar"></i>&ensp; About</a>
+            <a href="#topWeb" id="sidebar4" class="sidebar-a"><i class="fas fa-exclamation-circle icon-in-sidebar"></i>&ensp; About</a>
             <a onclick="openSearchCont()" id="sidebar5" class="sidebar-a" style="cursor: pointer;"><i class="fa fa-search icon-in-sidebar"></i>&ensp; Search</a>
-            <a onclick="toggleSidebar()" id="sidebar6" class="sidebar-a" style="cursor: pointer;"><i class="fa fa-close" icon-in-sidebar"></i>&ensp; Tutup</a>
+            <a onclick="toggleSidebar()" id="sidebar6" class="sidebar-a" style="cursor: pointer;"><i class="fa fa-close icon-in-sidebar"></i>&ensp; Tutup</a>
         </div>
         <div class="search-div" id="searchDiv">
-            tetttt
-            <a href="#topWeb" onclick="closeSearchCont()">Tutup</a>
+            <a href="#topWeb" onclick="closeSearchCont()" class="tutup-on-search-div"><i class="fa fa-close icon-close-in-search"></i></a>
             <br>
             <br>
+            <div class="cont-search-input">
+                <input type="text" id="searchInput" placeholder="Masukkan kata kunci pencarian" class="input-search">
+                <br><br>
+                <div class="cont-search-result">
+                    <div id="searchResults" class="result-search"></div>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -168,5 +175,6 @@
     </footer>
 
     <script src="Ast/Script/Javascript/script.js"></script>
+    <script src="Ast/Script/Javascript/search.js"></script>
 </body>
 </html>

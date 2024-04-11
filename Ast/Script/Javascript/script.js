@@ -42,11 +42,15 @@ function xoggleMode() {
 function openSearchCont() {
     var searchDiv = document.getElementById('searchDiv');
     searchDiv.style.display = 'block';
+    var body = document.getElementsByTagName('body')[0];
+    body.style.overflow = 'hidden';
 }
 
 function closeSearchCont() {
     var searchDiv = document.getElementById('searchDiv');
     searchDiv.style.display = 'none';
+    var body = document.getElementsByTagName('body')[0];
+    body.style.overflow = 'auto';
 }
 
 function toggleSidebar() {

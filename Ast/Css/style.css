@@ -62,3 +62,15 @@ h3 {
     border-radius: 20px;
 }
 
+::-webkit-input-placeholder { /* Untuk browser WebKit (Chrome, Safari, Opera) */
+    color: rgba(255, 255, 255, 0.644);
+}
+:-moz-placeholder { /* Untuk browser Firefox */
+    color: rgba(255, 255, 255, 0.644);
+}
+::-moz-placeholder { /* Untuk browser Firefox */
+    color: rgba(255, 255, 255, 0.644);
+}
+:-ms-input-placeholder { /* Untuk browser Edge dan IE */
+    color: rgba(255, 255, 255, 0.644);
+}

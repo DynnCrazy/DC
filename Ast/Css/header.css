@@ -133,3 +133,92 @@
     position: fixed;
     display: none;
 }
+.icon-close-in-search {
+    font-size: 30px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.cont-search-input {
+    text-align: center;
+    justify-content: center;
+}
+.cont-search-input p {
+    margin: 5px;
+}
+.cont-search-input a {
+    text-decoration: none;
+    cursor: pointer;
+}
+.input-search {
+    text-align: center;
+    background-color: #0095ff;
+    border: none;
+    width: 450px;
+    height: 30px;
+    color: white;
+    outline: none;
+    border-radius: 3px;
+}
+.input-search:focus {
+    border: none;
+    outline: none;
+}
+.cont-search-result {
+    text-align: center;
+    position: relative;
+}
+.result-search {
+    border-radius: 3px;
+    width: 450px;
+    height: auto;
+    text-align: center;
+    background-color: #0095ff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 5px 0 0 -225px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+/* === Untuk Hp === */
+@media only screen and (max-width: 767px) {
+
+    .icon-close-in-search {
+        font-size: 20px;
+        margin-right: 10px;
+        margin-top: 5px;
+    }
+    .cont-search-input p {
+        margin: 3px;
+    }
+    .input-search {
+        text-align: center;
+        background-color: #0095ff;
+        border: none;
+        width: 80%;
+        height: 25px;
+        color: white;
+        outline: none;
+        border-radius: 3px;
+    }
+    .cont-search-result {
+        text-align: center;
+        position: relative;
+    }
+    .result-search {
+        border-radius: 3px;
+        width: 80%;
+        height: auto;
+        text-align: center;
+        background-color: #0095ff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: 5px 0 0 -143px;
+        margin: 5px 0 0 -40%;
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+
+}
