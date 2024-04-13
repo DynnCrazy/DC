@@ -133,24 +133,16 @@
     font-size: 12px;
 }
 
-.b-project-all {
-    text-decoration: none;
+.btn-in-mp {
+    background-color: #0095ff;
+    border-radius: 3px;
+    color: #e5e5e5;
+    margin: 2px;
 }
 
-.b-project-bots {
-    text-decoration: none;
-}
-
-.b-project-website {
-    text-decoration: none;
-}
-
-.bproject {
-    text-decoration: none;
-}
-
-.bproject:hover {
-    text-decoration: underline;
+.btn-in-mp:hover {
+    background-color: #0086e5;
+    color: white;
 }
 
 .cntindex {
@@ -185,6 +177,15 @@
     top: 10px;
     right: 10px;
 }
+
+.btn {
+    background-color: #ccc;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+}
+
 
 /* === Untuk Hp === */
 @media only screen and (max-width: 767px) {

@@ -50,7 +50,7 @@
 }
 
 .sidebar {
-    height: 40%;
+    height: auto; /* 40% */
     width: 0;
     position: fixed;
     top: 0;

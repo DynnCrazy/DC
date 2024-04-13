@@ -23,7 +23,7 @@ body.light-mode .name-links {
     color: #0095ff;
 }
 body.light-mode .menu-icon {
-    color: #0095ff;
+    color: #000000;
 }
 body.light-mode .thefooter {
     color: #e5e5e5;
@@ -62,4 +62,19 @@ body.light-mode .myproject a {
 }
 body.light-mode .myproject a:hover {
     color: white;
+}
+body.light-mode #searchDiv {
+    background-color: white;
+}
+body.light-mode .cont-search-result a {
+    color: #e5e5e5;
+}
+body.light-mode .cont-search-result a:hover {
+    color: white;
+}
+body.light-mode .result-search {
+    color: #e5e5e5;
+}
+body.light-mode .icon-close-in-search {
+    color: #0095ff;
 }

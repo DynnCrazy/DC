@@ -1,39 +1,32 @@
-// == Test
-// function toggleNavbar() {
-//    var navbarLinks = document.getElementById('navbar-links');
-//    navbarLinks.style.display = (navbarLinks.style.display === 'none' || navbarLinks.style.display === '') ? 'flex' : 'none';
-// }
-// == Masih pemula aku puh
-  
 const toggleButton = document.getElementById('theme-toggle');
-        const body = document.body;
+const body = document.body;
 
-        // Check if user has previously selected a theme
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme) {
-            body.classList.add(savedTheme);
-        }
+    // Check if user has previously selected a theme
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        body.classList.add(savedTheme);
+    }
 
-        // Function to toggle between dark and light mode
-        function toggleMode() {
-            if (body.classList.contains('dark-mode')) {
-                body.classList.replace('dark-mode', 'light-mode');
-                localStorage.setItem('theme', 'light-mode');
+    // Function to toggle between dark and light mode
+    function toggleMode() {
+        if (body.classList.contains('dark-mode')) {
+            body.classList.replace('dark-mode', 'light-mode');
+            localStorage.setItem('theme', 'light-mode');
                 
-                var darkandlight = document.getElementById("logolandd");
-                darkandlight.innerHTML = '<i class="fa fa-moon-o"></i>';
+             var darkandlight = document.getElementById("logolandd");
+            darkandlight.innerHTML = '<i class="fa fa-moon-o"></i>';
 
-            } else {
-                body.classList.replace('light-mode', 'dark-mode');
-                localStorage.setItem('theme', 'dark-mode');
+        } else {
+            body.classList.replace('light-mode', 'dark-mode');
+            localStorage.setItem('theme', 'dark-mode');
               
-                var darkandlight = document.getElementById("logolandd");
-                darkandlight.innerHTML = '<i class="fa fa-sun-o"></i>';
-            }
+            var darkandlight = document.getElementById("logolandd");
+            darkandlight.innerHTML = '<i class="fa fa-sun-o"></i>';
         }
+    }
 
-        // Event listener for theme toggle button
-        toggleButton.addEventListener('click', toggleMode);
+// Event listener for theme toggle button
+toggleButton.addEventListener('click', toggleMode);
 
 function xoggleMode() {
     alert("Segera!");
@@ -76,21 +69,4 @@ function toggleProject(divId) {
     div.classList.toggle('hidden');
 }
 
-function updateClock() {
-    var currentTime = new Date().toLocaleString('en-US', { timeZone: 'Asia/Jakarta' });
-
-    var dateTimeParts = currentTime.split(', ');
-    var dayAbbreviation = dateTimeParts[0].split(' ')[0];
-    var dateMonthYear = dateTimeParts[0].split(' ')[1];
-    var time = dateTimeParts[1];
-
-    var formattedDateTime = dayAbbreviation + ' - ' + time;
-
-    document.getElementById('clock').innerHTML = formattedDateTime;
-
-    setTimeout(updateClock, 1000);
-}
-
-updateClock();
-
-console.log('Masih dalam tahap pengembangan...')
+console.log('Masih dalam tahap pengembangan...'); 

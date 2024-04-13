@@ -33,6 +33,7 @@
             <a href="#topWeb" id="sidebar4" class="sidebar-a"><i class="fas fa-exclamation-circle icon-in-sidebar"></i>&ensp; About</a>
             <a onclick="openSearchCont()" id="sidebar5" class="sidebar-a" style="cursor: pointer;"><i class="fa fa-search icon-in-sidebar"></i>&ensp; Search</a>
             <a onclick="toggleSidebar()" id="sidebar6" class="sidebar-a" style="cursor: pointer;"><i class="fa fa-close icon-in-sidebar"></i>&ensp; Tutup</a>
+            <br>
         </div>
         <div class="search-div" id="searchDiv">
             <a href="#topWeb" onclick="closeSearchCont()" class="tutup-on-search-div"><i class="fa fa-close icon-close-in-search"></i></a>
@@ -99,13 +100,25 @@
         <center>
             <h2>My Project</h2>
             <br>
-            <div class="row-button-project">
-                &emsp;<a href="#project" style="pointer-events: none;"  onclick="toggleProjectLink('all-project'); toggleProject('all-project');" id="all-project-link" class="b-project-all bold bproject">All</a>&emsp;<b>|</b>
-                &emsp;<a href="#project" onclick="toggleProjectLink('bots'); toggleProject('bots');" id="bots-link" class="b-project-bots bold bproject">Bots</a>&emsp;<b>|</b>
-                &emsp;<a href="#project" onclick="toggleProjectLink('website'); toggleProject('website');" id="website-link" class="b-project-website bold bproject">Website</a>&emsp;
+            <div class="btn-my-project">
+                <button class="btn btn-in-mp" style="background-color: #006bb8;" onclick="toggleProjectLink('all'); toggleProject('al');">All</button>
+                <button class="btn btn-in-mp" style="background-color: #0095ff;" onclick="toggleProjectLink('bots'); toggleProject('bots');">Bots</button>
+                <button class="btn btn-in-mp" style="background-color: #0095ff;" onclick="toggleProjectLink('website'); toggleProject('website');">Website</button>
+            </div>        
 
-                <div id="underline"></div>
-            </div>
+            <script>
+var buttons = document.querySelectorAll('.btn');
+var defaultColor = "#0095ff";
+
+buttons.forEach(function(button) {
+    button.addEventListener('click', function() {
+        buttons.forEach(function(btn) {
+            btn.style.backgroundColor = defaultColor;
+        });
+        this.style.backgroundColor = "#006bb8";
+    });
+});
+            </script>
 
             <br>
             <br>
@@ -148,10 +161,21 @@
         <center>
             <br><br>
             <div class="garislurus">.</div>
+            <br><br id="contact">
+        </center>
+
+        <center>
+            <h2>Contact Me</h2>
+            <p>DynnCrazy@gmail.com</p>
+        </center>
+
+        <center>
+            <br><br>
+            <div class="garislurus">.</div>
             <br><br>
         </center>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>      
+        
     </main>
 
     <footer id="buttomWeb">
@@ -166,7 +190,7 @@
             <div class="footertengah">
                 &emsp;<a href="#topWeb">To Top</a>&emsp;
                 &emsp;<a href="#centerWeb">About</a>&emsp;
-                &emsp;<a href="#buttomWeb">Contact</a>&emsp;
+                &emsp;<a href="#contact">Contact</a>&emsp;
             </div>
             <div class="footerbawah">
                 <span class="katadi-fb" id="ftrcopy">&copy; Copyright 2024 | Design by Dyn Crazy</span>
@@ -176,5 +200,9 @@
 
     <script src="Ast/Script/Javascript/script.js"></script>
     <script src="Ast/Script/Javascript/search.js"></script>
+
+    <!-- ---------------------------------------------------- -->
+    <!-- YANG BILANG INI BUATAN ORANG LAIN, INI BUATAN GW AJG -->
+    <!-- ---------------------------------------------------- -->
 </body>
 </html>
