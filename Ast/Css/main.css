@@ -75,7 +75,7 @@
 }
 
 .theskill {
-    width: 400px;
+    width: 30%;
     height: auto;
     background-color: #0381ff;
     background-color: #0095ff;
@@ -217,5 +217,19 @@
         padding-top: 100px;
         text-align: center;
         display: contents;
+    }
+    .theskill {
+        width: 31%;
+        height: auto;
+        background-color: #0381ff;
+        background-color: #0095ff;
+        margin: 12px;
+        padding: 14px;
+        border-radius: 5px;
+        font-size: 10px;
+    }   
+    .theskill h3 {
+        margin: 0;
+        margin-bottom: 7px;
     }
 }

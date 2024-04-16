@@ -33,8 +33,14 @@
 .jarak-di-fb {
     width: 20px;
     height: 35px;
+    color: transparent;
 }
 
 .katadi-fb {
     font-size: 12px;
+}
+.easter-egg-in-footer {
+    text-decoration: none;
+    color: transparent;
+    cursor: none;
 }
