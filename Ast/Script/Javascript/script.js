@@ -69,4 +69,26 @@ function toggleProject(divId) {
     div.classList.toggle('hidden');
 }
 
+function showDiv(divNumber) {
+    // Sembunyikan semua div terlebih dahulu
+    document.getElementById('all-project').style.display = 'none';
+    document.getElementById('bots').style.display = 'none';
+    document.getElementById('website').style.display = 'none';
+
+    // Tampilkan div sesuai dengan nomor tombol yang ditekan
+    if (divNumber === 1) {
+        document.getElementById('all-project').style.display = 'block';
+        document.getElementById('bots').style.display = 'none';
+        document.getElementById('website').style.display = 'none';
+    } else if (divNumber === 2) {
+        document.getElementById('all-project').style.display = 'none';
+        document.getElementById('bots').style.display = 'block';
+        document.getElementById('website').style.display = 'none';
+    } else if (divNumber === 3) {
+        document.getElementById('all-project').style.display = 'none';
+        document.getElementById('bots').style.display = 'none';
+        document.getElementById('website').style.display = 'block';
+    }
+}
+
 console.log('Masih dalam tahap pengembangan...'); 

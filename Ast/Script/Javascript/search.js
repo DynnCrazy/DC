@@ -1,10 +1,10 @@
 // Data yang akan Anda cari (contoh: daftar nama dan link)
 const data = [
     { name: "Top", link: "index.html#topWeb" },
-    { name: "YouTube", link: "https://www.youtube.com/@DynCrazy" },
-    { name: "heheh", link: "https://www.example.com/michael-johnson" },
-    { name: "Emily Davis", link: "https://www.example.com/emily-davis" },
-    { name: "David Brown", link: "https://www.example.com/david-brown" }
+    { name: "Skill", link: "index.html#skill" },
+    { name: "Project", link: "index.html#project" },
+    { name: "Contact", link: "index.html#contact" },
+    { name: "YouTube", link: "https://www.youtube.com/@DynCrazy" }
 ];
 
 // Fungsi untuk melakukan pencarian
@@ -24,6 +24,7 @@ function search() {
         a.textContent = result.name;
         a.onclick = () => {
             closeSearchCont();
+            toggleSidebar();
         };
         p.appendChild(a);
         searchResults.appendChild(p);

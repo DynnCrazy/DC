@@ -70,28 +70,23 @@
             <div class="cont-my-skill">
                 <div class="theskill">
                     <h3>Games</h3>
-                    Saya bisa main game Free Fire
+                    Description in here...
                     <br>
                 </div>
                 <div class="theskill">
                     <h3>Progammer</h3>
-                    Dalam bidang progammer, saya masih dalam tahap belajar. Kode yang masih saya pelajari adalah seperti html, css, dan javascript.
+                    Description in here...
                     <br>
                 </div>
                 <div class="theskill">
-                    <h3>Image Editing</h3>
-                    Untuk image editing, saya hanya bisa menggunakan aplikasi Pixellab, oleh karena itu image editing saya masih kurang.
+                    <h3>Editing</h3>
+                    Description in here...
                     <br>
                 </div>
                 <div class="theskill">
-                    <h3>Video Editing</h3>
-                    Video editing nya saya menggunakan aplikasi Kinemaster.
+                    <h3>Trend</h3>
+                    Description in here...
                     <br>
-                </div>
-                <div class="theskill">
-                    <h3>More</h3>
-                    Dm me for more
-                    <br> 
                 </div>
             </div>
         </center>
@@ -106,9 +101,9 @@
             <h2>My Project</h2>
             <br>
             <div class="btn-my-project">
-                <button class="btn btn-in-mp" style="background-color: #006bb8;" onclick="toggleProjectLink('all'); toggleProject('al');">All</button>
-                <button class="btn btn-in-mp" style="background-color: #0095ff;" onclick="toggleProjectLink('bots'); toggleProject('bots');">Bots</button>
-                <button class="btn btn-in-mp" style="background-color: #0095ff;" onclick="toggleProjectLink('website'); toggleProject('website');">Website</button>
+                <button class="btn btn-in-mp" style="background-color: #006bb8;" onclick="toggleProjectLink('all'); showDiv(1); toggleProject('al');">All</button>
+                <button class="btn btn-in-mp" style="background-color: #0095ff;" onclick="toggleProjectLink('bots'); showDiv(2); toggleProject('bots');">Bots</button>
+                <button class="btn btn-in-mp" style="background-color: #0095ff;" onclick="toggleProjectLink('website'); showDiv(3); toggleProject('website');">Website</button>
             </div>        
 
             <script>
@@ -143,6 +138,12 @@ buttons.forEach(function(button) {
                         <br><br>
                         <a href="#">Invite</a>
                     </div>
+                    <div class="myproject">
+                        <h3>Dyn Crazy Website</h3>
+                        Website resmi Dyn Crazy. Web ini dibuat hanya karena sekedar hobi dan untuk hiburan saja.
+                        <br><br>
+                        <a href="index.html">Pergi</a>
+                    </div>
                 </div>
 
                 <div class="the-project hidden" id="bots">
@@ -157,6 +158,15 @@ buttons.forEach(function(button) {
                         Soon!
                         <br><br>
                         <a href="#">Invite</a>
+                    </div>
+                </div>
+
+                <div class="the-project hidden" id="website">
+                    <div class="myproject">
+                        <h3>Dyn Crazy Website</h3>
+                        Website resmi Dyn Crazy. Web ini dibuat hanya karena sekedar hobi dan untuk hiburan saja.
+                        <br><br>
+                        <a href="index.html">Pergi</a>
                     </div>
                 </div>
 
@@ -179,7 +189,8 @@ buttons.forEach(function(button) {
             <div class="garislurus">.</div>
             <br><br>
         </center>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>      
+
+        <br><br><br><br><br>
         
     </main>
 
@@ -194,7 +205,7 @@ buttons.forEach(function(button) {
             </div>
             <div class="footertengah">
                 &emsp;<a href="#topWeb">To Top</a>&emsp;
-                &emsp;<a href="#centerWeb">About</a>&emsp;
+                &emsp;<a href="#topWeb">About</a>&emsp;
                 &emsp;<a href="#contact">Contact</a>&emsp;
             </div>
             <div class="footerbawah">
