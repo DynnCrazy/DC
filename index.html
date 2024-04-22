@@ -18,9 +18,10 @@
     <link rel="stylesheet" href="Ast/Css/darklightmode.css">
     <script src="Ast/Script/Javascript/script.js" defer></script>
     <script src="Ast/Script/Javascript/search.js" defer></script>
+    <script src="Ast/Script/Javascript/shortcut.js" defer></script>
 </head>
 <body>
-    <header id="topWeb">  
+    <header id="topWeb">         
         <div class="navbar" id="navbar">
             <span class="name"><a href="index.html" class="name-links">Dyn Crazy</a></span>
             <span class="menu-icon"><span id="logolandd" onclick="toggleMode()" class="inilink"><i class="fa fa-moon-o"></i></span>&emsp;<span id="menu-icon" onclick="toggleSidebar()" class="inilink">&#9776;</span></span>
@@ -30,7 +31,7 @@
             <a href="index.html" onclick="toggleSidebar()" id="sidebar1" class="sidebar-a"><i class="fas fa-home icon-in-sidebar"></i>&ensp; Main Menu</a>
             <a href="#skill" onclick="toggleSidebar()" id="sidebar2" class="sidebar-a"><i class="fas fa-star icon-in-sidebar"></i>&ensp; My Skill</a>
             <a href="#project" onclick="toggleSidebar()" id="sidebar3" class="sidebar-a"><i class="fas fa-folder-open icon-in-sidebar"></i>&ensp; Project</a>
-            <a href="#topWeb" id="sidebar4" class="sidebar-a"><i class="fas fa-exclamation-circle icon-in-sidebar"></i>&ensp; About</a>
+            <a href="#about" id="sidebar4" class="sidebar-a"><i class="fas fa-exclamation-circle icon-in-sidebar"></i>&ensp; About</a>
             <a onclick="openSearchCont()" id="sidebar5" class="sidebar-a" style="cursor: pointer;"><i class="fa fa-search icon-in-sidebar"></i>&ensp; Search</a>
             <a onclick="toggleSidebar()" id="sidebar6" class="sidebar-a" style="cursor: pointer;"><i class="fa fa-close icon-in-sidebar"></i>&ensp; Tutup</a>
             <br>
@@ -50,7 +51,7 @@
     </header>
 
     <main id="centerWeb">
-        <div class="cntindex">
+        <div class="cntindex" id="about">
             <img src="Ast/Image/dc-logo-png.png" class="img-index-one" >
             <h1 class="h1-index-one mycolor">Game Adalah Sumber Hiburan</h1>
         </div>
@@ -67,6 +68,7 @@
 
         <center>
             <h2>My Skill</h2>
+            <br>
             <div class="cont-my-skill">
                 <div class="theskill">
                     <h3>Games</h3>
@@ -101,7 +103,7 @@
             <h2>My Project</h2>
             <br>
             <div class="btn-my-project">
-                <button class="btn btn-in-mp" style="background-color: #006bb8;" onclick="toggleProjectLink('all'); showDiv(1); toggleProject('al');">All</button>
+                <button class="btn btn-in-mp" style="background-color: #0095ff;" onclick="toggleProjectLink('all'); showDiv(1); toggleProject('al');">All</button>
                 <button class="btn btn-in-mp" style="background-color: #0095ff;" onclick="toggleProjectLink('bots'); showDiv(2); toggleProject('bots');">Bots</button>
                 <button class="btn btn-in-mp" style="background-color: #0095ff;" onclick="toggleProjectLink('website'); showDiv(3); toggleProject('website');">Website</button>
             </div>        
@@ -115,7 +117,7 @@ buttons.forEach(function(button) {
         buttons.forEach(function(btn) {
             btn.style.backgroundColor = defaultColor;
         });
-        this.style.backgroundColor = "#006bb8";
+        this.style.backgroundColor = "#0084e3";
     });
 });
             </script>
@@ -176,6 +178,25 @@ buttons.forEach(function(button) {
         <center>
             <br><br>
             <div class="garislurus">.</div>
+            <br><br id="collection">
+        </center>
+
+        <center>
+            <h2>My Collection</h2>
+            <br>
+            <div class="cont-btn-my-collection">
+                <a href="Collection/my-film-list.html" class="a-in-bmc" style="color: #e5e5e5"><button class="btn-mc">Film List</button></a>
+                <a onclick="comingSoon()" class="a-in-bmc" style="color: #e5e5e5"><button class="btn-mc">Game List</button></a>
+                <a onclick="comingSoon()" class="a-in-bmc" style="color: #e5e5e5"><button class="btn-mc">Code List</button></a>
+                <a onclick="comingSoon()" class="a-in-bmc" style="color: #e5e5e5"><button class="btn-mc">Film List</button></a>
+                <a onclick="comingSoon()" class="a-in-bmc" style="color: #e5e5e5"><button class="btn-mc">Game List</button></a>
+                <a onclick="comingSoon()" class="a-in-bmc" style="color: #e5e5e5"><button class="btn-mc">Code List</button></a>
+            </div>  
+        </center>
+
+        <center>
+            <br><br>
+            <div class="garislurus">.</div>
             <br><br id="contact">
         </center>
 
@@ -205,17 +226,18 @@ buttons.forEach(function(button) {
             </div>
             <div class="footertengah">
                 &emsp;<a href="#topWeb">To Top</a>&emsp;
-                &emsp;<a href="#topWeb">About</a>&emsp;
+                &emsp;<a href="#about">About</a>&emsp;
                 &emsp;<a href="#contact">Contact</a>&emsp;
             </div>
             <div class="footerbawah">
-                <span class="katadi-fb" id="ftrcopy">&copy; Copyright 2024 | Design by Dyn Crazy</span>
+                <span class="katadi-fb" id="ftrcopy">&copy; Copyright 2024 - Now | Design by Dyn Crazy</span>
             </div>
         </div>
     </footer>
 
     <script src="Ast/Script/Javascript/script.js"></script>
     <script src="Ast/Script/Javascript/search.js"></script>
+    <script src="Ast/Script/Javascript/shortcut.js"></script>
 
     <!-- ---------------------------------------------------- -->
     <!-- YANG BILANG INI BUATAN ORANG LAIN, INI BUATAN GW AJG -->

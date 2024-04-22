@@ -1,6 +1,6 @@
 // Data yang akan Anda cari (contoh: daftar nama dan link)
 const data = [
-    { name: "Top", link: "index.html#topWeb" },
+    { name: "Top", link: "#topWeb" },
     { name: "Skill", link: "index.html#skill" },
     { name: "Project", link: "index.html#project" },
     { name: "Contact", link: "index.html#contact" },

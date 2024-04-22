@@ -75,7 +75,7 @@
 }
 
 .theskill {
-    width: 30%;
+    width: 40%; /* 30% */
     height: auto;
     background-color: #0381ff;
     background-color: #0095ff;
@@ -187,6 +187,118 @@
     outline: none;
 }
 
+.cont-btn-my-collection {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #e5e5e5;
+}
+.a-in-bmc {
+    color: #e5e5e5 !important;
+    text-decoration: none;
+}
+.a-in-bmc {
+    color: #ffffff;
+    text-decoration: none;
+}
+.btn-mc {
+    background-color: #0095ff;
+    padding: 20px 30px;
+    margin: 18px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 4px;
+    color: #e5e5e5;
+}
+.btn-mc:hover {
+    background-color: #0083e1;
+    color: white;
+}
+
+.cont-myfilmlist {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #e5e5e5;
+}
+.cont-myf {
+    background-color: #0095ff;
+    width: 150px;
+    height: auto;
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 18px;
+    cursor: pointer;
+}
+.in-cont-myf {
+    background-color: #008df2;
+    padding: 7px;
+    padding-top: 12px;
+    border-radius: 4px;
+}
+.img-in-poster-mf {
+    width: 100px;
+    border-radius: 4px;
+}
+#infoFilm {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    top: 0;
+    z-index: 9999;
+    position: fixed;
+    display: none;
+}
+.cont-myrate {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #e5e5e5;
+}
+.cont-my-rating-f {
+    background-color: #0095ff;
+    width: 700px;
+    margin-top: 40px;
+    height: 500px;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #e5e5e5;
+}
+.imginmyrate {
+    width: 300px;
+    margin-top: 23px;
+    border-radius: 4px;
+}
+.divinmyrate1 {
+    width: 50%;
+    position: relative;
+}
+.divinmyrate2 {
+    width: 45%;
+    position: relative;
+    padding: 10px;
+}
+.theratingf {
+    position: absolute;
+    bottom: 0; 
+    right: 0;
+    padding: 10px;
+    margin: 10px;
+    font-weight: normal;
+}
 
 /* === Untuk Hp === */
 @media only screen and (max-width: 767px) {
@@ -232,5 +344,105 @@
     .theskill h3 {
         margin: 0;
         margin-bottom: 7px;
+    }
+    .cont-btn-my-collection {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .btn-mc {
+        background-color: #0095ff;
+        width: 110px;
+        height: 40px;
+        padding: 10px 20px;
+        margin: 10px;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        border-radius: 2px;
+    }
+
+    .cont-myfilmlist {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        color: #e5e5e5;
+    }
+    .cont-myf {
+        background-color: #0095ff;
+        width: 128px;
+        height: 225px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+        border-radius: 4px;
+        margin: 7px;
+        margin-top: 12px;
+        cursor: pointer;
+        font-size: 13px;
+    }
+    .in-cont-myf {
+        background-color: #008df2;
+        padding: 5px;
+        border-radius: 4px;
+    }
+    .img-in-poster-mf {
+        width: 100px;
+        border-radius: 4px;
+    }
+
+    #infoFilm {
+        height: 100%;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        top: 0;
+        z-index: 9999;
+        position: fixed;
+        display: none;
+    }
+    .cont-myrate {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        color: #e5e5e5;
+    }
+    .cont-my-rating-f {
+        background-color: #0095ff;
+        width: 285px;
+        margin-top: 60px;
+        height: 425px;
+        padding: 5px;
+        border-radius: 4px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        color: #e5e5e5;
+    }
+    .imginmyrate {
+        width: 100px;
+        border-radius: 4px;
+        margin-top: 30px;
+    }
+    .divinmyrate1 {
+        width: 40%;
+        position: relative;
+    }
+    .divinmyrate2 {
+        width: 50%;
+        position: relative;
+        padding: 10px;
+        font-size: 12px;
+    }
+    .theratingf {
+        position: absolute;
+        bottom: 0; 
+        right: 0;
+        padding: 7px;
+        margin: 7px;
+        font-weight: normal;
     }
 }

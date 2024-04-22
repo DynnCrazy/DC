@@ -78,3 +78,6 @@ body.light-mode .result-search {
 body.light-mode .icon-close-in-search {
     color: #0095ff;
 }
+body.light-mode .btmnavbar {
+    background-color: rgb(122, 122, 122);
+}

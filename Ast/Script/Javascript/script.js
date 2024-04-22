@@ -28,8 +28,8 @@ const body = document.body;
 // Event listener for theme toggle button
 toggleButton.addEventListener('click', toggleMode);
 
-function xoggleMode() {
-    alert("Segera!");
+function comingSoon() {
+    alert("Segera hadir!");
 }
 
 function openSearchCont() {
@@ -58,7 +58,7 @@ function toggleSidebar() {
 }
 
 var copyright = document.getElementById('ftrcopy');
-copyright.innerHTML = "Copyright 2024 | Design by Dyn Crazy"
+copyright.innerHTML = "Copyright 2077 | Design by Dyn Crazy";
 
 function toggleProjectLink(id) {
     var abccccc = '1';
