@@ -39,6 +39,13 @@ body.light-mode .sidebar {
     color: #e5e5e5;
     box-shadow: none;
 }
+body.light-mode .sidebarx {
+    color: #e5e5e5;
+    box-shadow: none;
+    border-right: 2px solid white;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
 body.light-mode .sidebar-a {
     color: #e5e5e5;
 }
@@ -66,6 +73,9 @@ body.light-mode .myproject a:hover {
 body.light-mode #searchDiv {
     background-color: white;
 }
+body.light-mode #infoFilm {
+    background-color: white;
+}
 body.light-mode .cont-search-result a {
     color: #e5e5e5;
 }
@@ -76,7 +86,7 @@ body.light-mode .result-search {
     color: #e5e5e5;
 }
 body.light-mode .icon-close-in-search {
-    color: #0095ff;
+    color: #000000;
 }
 body.light-mode .btmnavbar {
     background-color: rgb(122, 122, 122);

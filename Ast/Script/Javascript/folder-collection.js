@@ -1,21 +1,57 @@
 const movies = {
     kungfu_panda: {
         title: "Kungfu Panda",
-        rating: 8.1,
-        description: "Kung Fu Panda adalah sebuah film komedi aksi animasi komputer Amerika 2008 yang diproduksi oleh DreamWorks Animation. Film ini disutradarai oleh John Stevenson dan Mark Osborne dan diproduseri oleh Melissa Cobb.",
+        rating: 0.0,
+        description: "Description in here...",
+        poster: "https://i.ibb.co/Lk9SbNb/20240421-120331.png"
+    },
+    kungfu_panda_2: {
+        title: "Kungfu Panda 2",
+        rating: 0.0,
+        description: "Description in here...",
+        poster: "https://i.ibb.co/Lk9SbNb/20240421-120331.png"
+    },
+    kungfu_panda_3: {
+        title: "Kungfu Panda 3",
+        rating: 0.0,
+        description: "Description in here...",
         poster: "https://i.ibb.co/Lk9SbNb/20240421-120331.png"
     },
     avatar: {
         title: "Avatar",
-        rating: 7.8,
-        description: "Avatar adalah film fiksi ilmiah epik Amerika 2009 yang disutradarai, diproduksi, dan ditulis oleh James Cameron. Film ini membawa penonton ke planet Pandora, di mana manusia mencoba mengeksploitasi sumber daya alamnya.",
-        poster: "https://example.com/avatar_poster.jpg"
+        rating: 0.0,
+        description: "Description in here...",
+        poster: "https://i.ibb.co/51L5qXj/20240421-120211.png"
     },
-    upin_ipin: {
+    mr_bean_holiday: {
+        title: "Mr Bean Holiday",
+        rating: 0.0,
+        description: "Description in here...",
+        poster: "https://i.ibb.co/Lk9SbNb/20240421-120331.png"
+    },
+    dilan_1990: {
+        title: "Dilan 1990",
+        rating: 0.0,
+        description: "Description in here...",
+        poster: "https://i.ibb.co/Lk9SbNb/20240421-120331.png"
+    },
+    dilan_1991: {
+        title: "Dilan 1991",
+        rating: 0.0,
+        description: "Description in here...",
+        poster: "https://i.ibb.co/Lk9SbNb/20240421-120331.png"
+    },
+    milea_suara_dari_dilan: {
+        title: "Milea Suara Dari Dilan",
+        rating: 0.0,
+        description: "Description in here...",
+        poster: "https://i.ibb.co/Lk9SbNb/20240421-120331.png"
+    },
+    upin_ipin_keris_st: {
         title: "Upin & Ipin",
-        rating: 8.0,
-        description: "Upin & Ipin adalah sebuah serial televisi animasi anak-anak yang diproduksi oleh Les' Copaque Production di Malaysia. Serial ini mengisahkan tentang kehidupan sehari-hari dua anak kembar bernama Upin dan Ipin.",
-        poster: "https://example.com/upin_ipin_poster.jpg"
+        rating: 0.0,
+        description: "Description in here...",
+        poster: "https://i.ibb.co/dLwbQpv/20240421-120239.png"
     }
 };
 

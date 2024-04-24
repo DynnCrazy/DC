@@ -135,7 +135,7 @@
 
 .btn-in-mp {
     background-color: #0095ff;
-    border-radius: 3px;
+    border-radius: 2px;
     color: #e5e5e5;
     margin: 2px;
 }
@@ -332,14 +332,14 @@
         display: contents;
     }
     .theskill {
-        width: 31%;
+        width: 90%; /* 31% */
         height: auto;
         background-color: #0381ff;
         background-color: #0095ff;
         margin: 12px;
         padding: 14px;
         border-radius: 5px;
-        font-size: 10px;
+        font-size: 13px;
     }   
     .theskill h3 {
         margin: 0;
@@ -372,25 +372,27 @@
     }
     .cont-myf {
         background-color: #0095ff;
-        width: 128px;
-        height: 225px;
+        width: 140px;
+        height: auto;
         padding-left: 10px;
         padding-right: 10px;
         text-align: center;
         border-radius: 4px;
-        margin: 7px;
+        margin: 8px;
         margin-top: 12px;
         cursor: pointer;
-        font-size: 13px;
+        font-size: 12px;
     }
     .in-cont-myf {
         background-color: #008df2;
         padding: 5px;
         border-radius: 4px;
+        margin-top: -7px;
     }
     .img-in-poster-mf {
         width: 100px;
         border-radius: 4px;
+        margin-top: 4px;
     }
 
     #infoFilm {
