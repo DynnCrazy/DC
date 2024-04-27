@@ -13,4 +13,3 @@ btnRematch.onclick = () => {
 };
 
 btnMode.onclick = () => { board.classList.toggle('special') };
-
