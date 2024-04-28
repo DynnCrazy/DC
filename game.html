@@ -93,7 +93,7 @@
             text-align: center;
             color: #e5e5e5;
             cursor: pointer;
-            margin: 25px;
+            margin: 30px;
         }
         .btn-lp:hover {
             background-color: #0084e3;
@@ -266,7 +266,10 @@
 
         function hide(id) {
 
-            if ( kesempatanPilih > 0 && kesempatanPilih != 20 ) {
+            var theimg = document.getElementById('img' + id);
+            var imgurl = theimg.src;
+
+            if ( kesempatanPilih > 0 && kesempatanPilih != 20 && imgurl != 'https://i.ibb.co/Fw0vkfM/20240427-140650.jpg' ) {
                 kesempatanPilih -= 1;
                 var gantiImg = document.getElementById('img' + id);
                 gantiImg.src = 'https://i.ibb.co/Fw0vkfM/20240427-140650.jpg';
@@ -275,12 +278,17 @@
             } else if ( kesempatanPilih === 20 ) {
                 kesempatanPilih -= 1;
             } else {
-                var lastImg = document.getElementById('img' + id);
-                var lastUrl = lastImg.src;
-                var divEnd = document.getElementById('end');
-                divEnd.style.display = 'block';
-                var gambarLast = document.getElementById('gambarLast');
-                gambarLast.src = lastUrl;
+
+                if ( imgurl === 'https://i.ibb.co/Fw0vkfM/20240427-140650.jpg' ) {
+                    console.log('Aku menekannya dua kali, ups...')
+                } else {
+                    var lastImg = document.getElementById('img' + id);
+                    var lastUrl = lastImg.src;
+                    var divEnd = document.getElementById('end');
+                    divEnd.style.display = 'block';
+                    var gambarLast = document.getElementById('gambarLast');
+                    gambarLast.src = lastUrl;
+                }
             }
         }
 
