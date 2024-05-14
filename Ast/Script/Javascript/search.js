@@ -1,11 +1,33 @@
 // Data yang akan Anda cari (contoh: daftar nama dan link)
 const data = [
-    { name: "Top", link: "#topWeb" },
-    { name: "Skill", link: "index.html#skill" },
-    { name: "Project", link: "index.html#project" },
-    { name: "Contact", link: "index.html#contact" },
-    { name: "YouTube", link: "https://www.youtube.com/@DynCrazy" }
+    { name: "Menu", link: "/index.html" },
+    { name: "Skill", link: "/index.html#skill" },
+    { name: "Project", link: "/index.html#project" },
+    { name: "Collection", link: "/index.html#collection" },
+    { name: "About Me", link: "/index.html#about" },
+    { name: "Contact", link: "/index.html#contact" },
+    { name: "My Film", link: "/Collection/Film/index.html" },
+    { name: "YouTube", link: "/Links/youtube.html" },
+    { name: "Instagram", link: "/Links/instagram.html" },
+    { name: "TikTok", link: "/Links/tiktok.html" },
+    { name: "Facebook", link: "/Links/facebook.html" },
+    { name: "GitHub", link: "/Links/github.html" },
+    { name: "Top Web", link: "#topWeb" },
+    { name: "Center Web", link: "#centerWeb" },
+    { name: "Buttom Web", link: "#buttomWeb" },
+    { name: "End", link: "/easter-egg-in-here.html" }
 ];
+
+// Gak ada gunanya
+function hitungFolder(url) {
+    url = url.replace(/(^\w+:|^)\/\//, '');
+    var jumlahFolder = (url.match(/\//g) || []).length;
+    return jumlahFolder;
+}
+
+var url = window.location.href;
+var folder = hitungFolder(url);
+console.log("Folder saat ini:", folder);
 
 // Fungsi untuk melakukan pencarian
 function search() {

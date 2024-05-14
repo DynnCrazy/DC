@@ -1,3 +1,5 @@
+document.getElementById('ftrcopy').innerHTML = "Copyright 2024 - Design by Dyn Crazy";
+
 const toggleButton = document.getElementById('theme-toggle');
 const body = document.body;
 
@@ -55,10 +57,8 @@ function toggleSidebar() {
     } else {
         sidebar.style.width = "200px";
     }
-}
 
-var copyright = document.getElementById('ftrcopy');
-copyright.innerHTML = "Copyright 2077 | Design by Dyn Crazy";
+}
 
 function toggleProjectLink(id) {
     var abccccc = '1';
@@ -91,4 +91,19 @@ function showDiv(divNumber) {
     }
 }
 
+/* var tanggalSekarang = new Date();
+
+    var tanggal = tanggalSekarang.getDate();
+    var bulan = tanggalSekarang.getMonth() + 1; 
+    var tahun = tanggalSekarang.getFullYear();
+
+
+    if ( tahun == 2024 ) {
+        alert('Selamat tahun baru!');
+    } else if ( tanggal == 31 ) {
+        alert('Goodbye!');
+    } else {
+        console.log('I Love You!');
+    }
+*/
 console.log('Masih dalam tahap pengembangan...'); 

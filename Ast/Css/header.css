@@ -50,7 +50,7 @@
 }
 
 .sidebar {
-    height: 45%; /* 40% */
+    height: 47%; /* 40% */
     width: 0;
     position: fixed;
     top: 0;
@@ -207,6 +207,10 @@
 
 /* === Untuk Hp === */
 @media only screen and (max-width: 767px) {
+
+    .sidebar {
+        height: 53%; /* 40% */
+    }
 
     .icon-close-in-search {
         font-size: 20px;
