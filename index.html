@@ -24,16 +24,17 @@
     <header id="topWeb">         
         <div class="navbar" id="navbar">
             <span class="name"><a href="index.html" class="name-links">Dyn Crazy</a></span>
-            <span class="menu-icon"><span id="logolandd" onclick="toggleMode()" class="inilink"><i class="fa fa-moon-o"></i></span>&emsp;<span id="menu-icon" onclick="toggleSidebar()" class="inilink">&#9776;</span></span>
+            <span class="menu-icon"><span id="logolandd" onclick="comingSoon()" class="inilink"><i class="fa fa-moon-o"></i></span>&emsp;<span id="menu-icon" onclick="toggleSidebar()" class="inilink">&#9776;</span></span>
         </div>
         <div id="btmsbar" class="btmnavbar">.</div>
         <div class="sidebar" id="sidebar">
             <a href="index.html" onclick="toggleSidebar()" id="sidebar1" class="sidebar-a"><i class="fas fa-home icon-in-sidebar"></i>&ensp; Main Menu</a>
             <a href="#skill" onclick="toggleSidebar()" id="sidebar2" class="sidebar-a"><i class="fas fa-star icon-in-sidebar"></i>&ensp; My Skill</a>
             <a href="#project" onclick="toggleSidebar()" id="sidebar3" class="sidebar-a"><i class="fas fa-folder-open icon-in-sidebar"></i>&ensp; Project</a>
-            <a href="#about" id="sidebar4" class="sidebar-a"><i class="fas fa-exclamation-circle icon-in-sidebar"></i>&ensp; About</a>
-            <a onclick="openSearchCont()" id="sidebar5" class="sidebar-a" style="cursor: pointer;"><i class="fa fa-search icon-in-sidebar"></i>&ensp; Search</a>
-            <a onclick="toggleSidebar()" id="sidebar6" class="sidebar-a" style="cursor: pointer;"><i class="fa fa-close icon-in-sidebar"></i>&ensp; Tutup</a>
+            <a href="#collection" onclick="toggleSidebar()" id="sidebar4" class="sidebar-a"><i class="fas fa-folder-open icon-in-sidebar"></i>&ensp; Collection</a>
+            <a href="#about" id="sidebar5" class="sidebar-a"><i class="fas fa-exclamation-circle icon-in-sidebar"></i>&ensp; About</a>
+            <a onclick="openSearchCont()" id="sidebar6" class="sidebar-a" style="cursor: pointer;"><i class="fa fa-search icon-in-sidebar"></i>&ensp; Search</a>
+            <a onclick="toggleSidebar()" id="sidebar7" class="sidebar-a" style="cursor: pointer;"><i class="fa fa-close icon-in-sidebar"></i>&ensp; Tutup</a>
             <br>
         </div>
         <div class="search-div" id="searchDiv">
@@ -106,6 +107,12 @@
                 <button class="btn btn-in-mp" style="background-color: #0095ff;" onclick="toggleProjectLink('all'); showDiv(1); toggleProject('al');">All</button>
                 <button class="btn btn-in-mp" style="background-color: #0095ff;" onclick="toggleProjectLink('bots'); showDiv(2); toggleProject('bots');">Bots</button>
                 <button class="btn btn-in-mp" style="background-color: #0095ff;" onclick="toggleProjectLink('website'); showDiv(3); toggleProject('website');">Website</button>
+            
+                <div class="project-buttons">
+                    <div class="prjbutton-1">All</div>
+                    <div class="prjbutton-1">Bots</div>
+                    <div class="prjbutton-1">Website</div>
+                </div>
             </div>        
 
             <script>

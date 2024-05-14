@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyn Crazy</title>
+    <link rel="icon" type="image/png" href="../web-icon.png">
+    <meta name="description" content="Website Dyn Crazy">
+    <meta name="robots" content="index, follow">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="../Ast/Css/style.css">
+    <style>
+        img {
+            width: 95%;
+            border-radius: 2px;
+        }
+        .container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            color: #e5e5e5;
+        }
+        .cursor {
+            cursor: pointer;
+        }
+        .inCont {
+            background-color: #0095ff;
+            padding: 10px;
+            width: 105px;
+            height: 105px;
+            margin: 14px;
+            display: grid;
+            place-items: center;
+            text-align: center;
+            border-radius: 2px;
+        }
+        .inCont:hover {
+            background-color: #0084e3;
+        }
+        #end {
+            height: 100%;
+            width: 100%;
+            background-color: rgb(0, 0, 0);
+            top: 0;
+            z-index: 1111;
+            position: fixed;
+            display: none;
+            place-items: center;
+            text-align: center;
+        }
+        #pilihan {
+            height: 100%;
+            width: 100%;
+            background-color: rgb(0, 0, 0);
+            top: 0;
+            z-index: 2222;
+            position: fixed;
+            display: none;
+            place-items: center;
+            text-align: center;
+        }
+        #pilihann {
+            height: 100%;
+            width: 100%;
+            background-color: rgb(0, 0, 0);
+            top: 0;
+            z-index: 2223;
+            position: fixed;
+            display: none;
+            place-items: center;
+            text-align: center;
+        }
+        #mygametheme {
+            height: 100%;
+            width: 100%;
+            background-color: rgb(0, 0, 0);
+            top: 0;
+            z-index: 3333;
+            position: fixed;
+            display: block;
+            place-items: center;
+            text-align: center;
+        }
+        #btnpilihan {
+            display: none;
+        }
+        .img-in {
+            width: 200px;
+            border-radius: 2px;
+        }
+        .btn-chs {
+            background-color: #0095ff;
+            border: none;
+            border-radius: 3px;
+            padding: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: center;
+            color: #e5e5e5;
+            cursor: pointer;
+            margin: 10px;
+        }
+        .btn-chs:hover {
+            background-color: #0084e3;
+            color: white;
+        }
+        .btn-lp {
+            background-color: #0095ff;
+            border: none;
+            border-radius: 3px;
+            padding: 7px;
+            text-align: center;
+            color: #e5e5e5;
+            cursor: pointer;
+            margin: 30px;
+        }
+        .btn-lp:hover {
+            background-color: #0084e3;
+            color: white;
+        }
+        @media only screen and (max-width: 767px) {
+            .inCont {
+            background-color: #0095ff;
+            padding: 6px;
+            width: 60px;
+            height: 60px;
+            margin: 6px;
+            }
+
+            img {
+            width: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;" id="thetitle">Pilih Benda Pilihan Kamu :</h1>
+    <div class="container">
+
+        <div class="inCont cursor" id="div1" onclick="pilihanSaya('1'); hide('1');">
+            <img src="https://i.ibb.co/2yrdJvt/20240427-140615.jpg" id="img1" alt="Guess Who ?">
+        </div>
+
+        <div class="inCont cursor" id="div2" onclick="pilihanSaya('2'); hide('2');">
+            <img src="https://i.ibb.co/4FZpnDn/20240427-143533.jpg" id="img2" alt="Guess Who ?">
+        </div>
+
+        <div class="inCont cursor" id="div3" onclick="pilihanSaya('3'); hide('3');">
+            <img src="https://i.ibb.co/gJdQJ8n/20240427-144549.jpg" id="img3" alt="Guess Who ?">
+        </div>
+
+        <div class="inCont cursor" id="div4" onclick="pilihanSaya('4'); hide('4');">
+            <img src="https://i.ibb.co/3FJjn6V/20240427-143751.jpg" id="img4" alt="Guess Who ?">
+        </div>
+
+        <div class="inCont cursor" id="div5" onclick="pilihanSaya('5'); hide('5');">
+            <img src="https://i.ibb.co/4tnZBQR/20240427-143724.jpg" id="img5" alt="Guess Who ?">
+        </div>
+
+        <div class="inCont cursor" id="div6" onclick="hide('6'); pilihanSaya('6');">
+            <img src="https://i.ibb.co/jDQw2nN/20240427-143702.jpg" id="img6" alt="Guess Who ?">
+        </div>
+
+        <div class="inCont cursor" id="div7" onclick="hide('7'); pilihanSaya('7');">
+            <img src="https://i.ibb.co/qR6BRfR/20240427-144628.jpg" id="img7" alt="Guess Who ?">
+        </div>
+
+        <div class="inCont cursor" id="div8" onclick="hide('8'); pilihanSaya('8');">
+            <img src="https://i.ibb.co/xXj63q8/20240427-144525.jpg" id="img8" alt="Guess Who ?">
+        </div>
+
+        <div class="inCont cursor" id="div9" onclick="hide('9'); pilihanSaya('9');">
+            <img src="https://i.ibb.co/mBw0HbF/20240427-145610.jpg" id="img9" alt="Guess Who ?">
+        </div>
+
+        <div class="inCont cursor" id="div10" onclick="hide('10'); pilihanSaya('10');">
+            <img src="https://i.ibb.co/w6Ybykt/20240427-145700.jpg" id="img10" alt="Guess Who ?">
+        </div>
+
+        <div class="inCont cursor" id="div11" onclick="hide('11'); pilihanSaya('11');">
+            <img src="https://i.ibb.co/Tcwt0zT/20240427-150215.jpg" id="img11" alt="Guess Who ?">
+        </div>
+
+        <div class="inCont cursor" id="div12" onclick="hide('12'); pilihanSaya('12');">
+            <img src="https://i.ibb.co/j6106yw/20240427-145109.jpg" id="img12" alt="Guess Who ?">
+        </div>
+
+        <div class="inCont cursor" id="div13" onclick="hide('13'); pilihanSaya('13');" >
+            <img src="https://i.ibb.co/7NJpfMk/20240427-144609.jpg" id="img13" alt="Guess Who ?">
+        </div>
+
+        <div class="inCont cursor" id="div14" onclick="hide('14'); pilihanSaya('14');">
+            <img src="https://i.ibb.co/85WRL8n/20240427-145149.jpg" id="img14" alt="Guess Who ?">
+        </div>
+
+        <div class="inCont cursor" id="div15" onclick="hide('15'); pilihanSaya('15');">
+            <img src="https://i.ibb.co/dgdz1Jh/20240427-144651.jpg" id="img15" alt="Guess Who ?">
+        </div>
+
+        <div class="inCont cursor" id="div16" onclick="hide('16'); pilihanSaya('16');">
+            <img src="https://i.ibb.co/mD2dKcN/20240427-145207.jpg" id="img16" alt="Guess Who ?">
+        </div>
+
+        <div class="inCont cursor" id="div17" onclick="pilihanSaya('17'); hide('17');">
+            <img src="https://i.ibb.co/MSPZGBR/20240427-150053.jpg" id="img17" alt="Guess Who ?">
+        </div>
+
+        <div class="inCont cursor" id="div18" onclick=" pilihanSaya('18'); hide('18');">
+            <img src="https://i.ibb.co/bvLn59w/20240427-145636.jpg" id="img18" alt="Guess Who ?">
+        </div>
+
+        <div class="inCont cursor" id="div19" onclick="pilihanSaya('19'); hide('19');">
+            <img src="https://i.ibb.co/ZV2zrpb/20240427-150019.jpg" id="img19" alt="Guess Who ?">
+        </div>
+
+        <div class="inCont cursor" id="div20" onclick="pilihanSaya('20'); hide('20');">
+            <img src="https://i.ibb.co/S39tqTm/20240427-150004.jpg" id="img20" alt="Guess Who ?">
+        </div>
+    </div>
+
+    <div id="mygametheme">
+        <center>
+            <h1>Pilihan Tema Terlebih Dahulu!</h1>
+            <br>
+            <button onclick="gameTheme('benda'); tutupgtheme();" class="btn-theme">Benda</button>
+            <button onclick="gameTheme('hewan'); tutupgtheme();" class="btn-theme">Hewan</button>
+            <button onclick="gameTheme('buah'); tutupgtheme();" class="btn-theme">Buah</button>
+        </center>
+    </div>
+
+    <div id="btnpilihan">
+        <center>
+            <button onclick="bukaPilihan()" class="btn-lp">Pilihanku</button>
+        </center>
+    </div>
+
+    <div id="pilihan">
+        <center>
+            <h1>Pilihan Saya:</h1>
+            <img src="" id="gambarPilihan" alt="Pilihan Saya" class="img-in">
+            <br>
+            <br>
+            <br>
+            <br>
+            <button onclick="tutupPilihan()" class="btn-chs">Kembali</button>
+        </center>
+    </div>
+
+    <div id="pilihann">
+        <center>
+            <h1 id="ttlonpilihan">Saya Memilih:</h1>
+            <img src="" id="gambarPilihann" alt="Pilihan Saya" class="img-in">
+            <br>
+            <br>
+            <br>
+            <br>
+            <button onclick="tutupPilihann()" class="btn-chs">Oke</button>
+        </center>
+    </div>
+
+    <div id="end">
+        <center>
+            <h1>Tebakan Saya:</h1>
+            <img src="" id="gambarLast" alt="Tebakan Saya" class="img-in">
+            <br>
+            <br>
+            <br>
+            <br>
+            <button onclick="bukaPilihan()" class="btn-chs">Pilihan Saya</button>
+            <br>
+            <button onclick="reloadWeb()" class="btn-chs">Ulangi Permainan</button>
+        </center>
+    </div>
+
+    <audio id="myaudio1" src="/Ast/Audio/mouse-click.mp3"></audio>
+
+    <script>
+        var urlParams = new URLSearchParams(window.location.search);
+
+        // Memeriksa apakah parameter namasaya ada
+        if (urlParams.has('namasaya')) {
+            var namasaya = urlParams.get('namasaya');
+            document.getElementById('ttlonpilihan').innerHTML = 'Saya (' + namasaya + ') Memilih:';
+            console.log('My name is: ' + namasaya);
+        } else {
+            console.log("My name not found!");
+        }
+
+        // Memeriksa apakah parameter namalawan ada
+        if (urlParams.has('namalawan')) {
+            var namalawan = urlParams.get('namalawan');
+            console.log('Enemy name is: ' + namalawan);
+        } else {
+            console.log("Enemy name not found!");
+        }
+
+        // Untuk menetapkan tema yang dipilih user
+        function gameTheme(theme) {
+
+            if ( theme === 'benda' ) { // Jika user memilih tema: benda
+                console.log('Theme: default (benda)');
+            } else if ( theme === 'hewan') { // Jika user memilih tema: hewan
+                document.getElementById('img1').src = 'https://i.ibb.co/LC6Pv77/20240501-224409.jpg';
+                document.getElementById('img2').src = 'https://i.ibb.co/gFwVBHf/20240501-224350.jpg';
+                document.getElementById('img3').src = 'https://i.ibb.co/QFGWPkj/20240501-223608.jpg';
+                document.getElementById('img4').src = 'https://i.ibb.co/hCmCmbr/20240501-223803.jpg';
+                document.getElementById('img5').src = 'https://i.ibb.co/Lr06Kf8/20240501-223926.jpg';
+                document.getElementById('img6').src = 'https://i.ibb.co/WzgFhC3/20240501-224103.jpg';
+                document.getElementById('img7').src = 'https://i.ibb.co/D72VRjZ/20240501-224147.jpg';
+                document.getElementById('img8').src = 'https://i.ibb.co/4NZv8dT/20240501-223747.jpg';
+                document.getElementById('img9').src = 'https://i.ibb.co/By9WJdV/20240501-223907.jpg';
+                document.getElementById('img10').src = 'https://i.ibb.co/0BYfpzZ/20240501-223846.jpg';
+                document.getElementById('img11').src = 'https://i.ibb.co/k1zMK5z/20240501-224022.jpg';
+                document.getElementById('img12').src = 'https://i.ibb.co/D4NmQ7d/20240501-224330.jpg';
+                document.getElementById('img13').src = 'https://i.ibb.co/9YvxqLs/20240501-223822.jpg';
+                document.getElementById('img14').src = 'https://i.ibb.co/0c1bDcJ/20240501-224123.jpg';
+                document.getElementById('img15').src = 'https://i.ibb.co/FXcfZf8/20240501-223656.jpg';
+                document.getElementById('img16').src = 'https://i.ibb.co/VvMB1H8/20240501-223942.jpg';
+                document.getElementById('img17').src = 'https://i.ibb.co/6bwrGdm/20240501-224253.jpg';
+                document.getElementById('img18').src = 'https://i.ibb.co/4pFfqXT/20240501-223717.jpg';
+                document.getElementById('img19').src = 'https://i.ibb.co/129Y3BH/20240501-223959.jpg';
+                document.getElementById('img20').src = 'https://i.ibb.co/HTp5257/20240501-223639.jpg';
+                console.log('Theme: hewan');
+            } else if ( theme === 'buah') { // Jika user memilih tema: buah
+                document.getElementById('img1').src = 'https://i.ibb.co/XsTVXvL/20240501-171840.jpg';
+                document.getElementById('img2').src = 'https://i.ibb.co/cvtty94/20240501-171914.jpg';
+                document.getElementById('img3').src = 'https://i.ibb.co/w7CjKY6/20240501-172013.jpg';
+                document.getElementById('img4').src = 'https://i.ibb.co/8BGjFR2/20240501-172136.jpg';
+                document.getElementById('img5').src = 'https://i.ibb.co/BsQFDMs/20240501-172225.jpg';
+                document.getElementById('img6').src = 'https://i.ibb.co/D4Sqy5v/20240501-171950.jpg';
+                document.getElementById('img7').src = 'https://i.ibb.co/nnnDxby/20240501-172540.jpg';
+                document.getElementById('img8').src = 'https://i.ibb.co/8N7774r/20240501-172347.jpg';
+                document.getElementById('img9').src = 'https://i.ibb.co/1XMLmnD/20240501-172644.jpg';
+                document.getElementById('img10').src = 'https://i.ibb.co/K2QZnYt/20240501-172450.jpg';
+                document.getElementById('img11').src = 'https://i.ibb.co/NjpxrVR/20240501-172600.jpg';
+                document.getElementById('img12').src = 'https://i.ibb.co/10fWWZ7/20240501-172622.jpg';
+                document.getElementById('img13').src = 'https://i.ibb.co/zfhf1nR/20240501-172253.jpg';
+                document.getElementById('img14').src = 'https://i.ibb.co/3BrGfFK/20240501-172409.jpg';
+                document.getElementById('img15').src = 'https://i.ibb.co/H4Rb1wv/20240501-172512.jpg';
+                document.getElementById('img16').src = 'https://i.ibb.co/hF3SjZ8/20240501-172333.jpg';
+                document.getElementById('img17').src = 'https://i.ibb.co/hYLQWVT/20240501-172104.jpg';
+                document.getElementById('img18').src = 'https://i.ibb.co/8g3zHHv/20240501-172156.jpg';
+                document.getElementById('img19').src = 'https://i.ibb.co/ZTnTb3M/20240501-172316.jpg';
+                document.getElementById('img20').src = 'https://i.ibb.co/MRjXMXw/20240501-172429.jpg';   
+                console.log('Theme: buah');
+            } else { // Jika user memilih tema, tapi tidak ada yang sesuai/cocok
+                alert('Terjadi kesalahan...')
+                console.log('Theme: NOT FOUND!');
+            }
+
+            /*  == Template ==
+                document.getElementById('img1').src = '';
+                document.getElementById('img2').src = '';
+                document.getElementById('img3').src = '';
+                document.getElementById('img4').src = '';
+                document.getElementById('img5').src = '';
+                document.getElementById('img6').src = '';
+                document.getElementById('img7').src = '';
+                document.getElementById('img8').src = '';
+                document.getElementById('img9').src = '';
+                document.getElementById('img10').src = '';
+                document.getElementById('img11').src = '';
+                document.getElementById('img12').src = '';
+                document.getElementById('img13').src = '';
+                document.getElementById('img14').src = '';
+                document.getElementById('img15').src = '';
+                document.getElementById('img16').src = '';
+                document.getElementById('img17').src = '';
+                document.getElementById('img18').src = '';
+                document.getElementById('img19').src = '';
+                document.getElementById('img20').src = '';
+                 console.log('Theme: theme');   
+            */
+        }
+
+        // Untuk menutup div saat sudah memilih tema 
+        function tutupgtheme() {
+            document.getElementById('mygametheme').style.display = 'none';
+        }
+
+        var kesempatanPilih = 20; // 19
+        var sayaPilih = 0;
+        
+        function pilihanSaya(number) {
+
+            if ( sayaPilih === 0 ) {
+                sayaPilih += 1;
+                var pilihImg = document.getElementById('img' + number);
+                var pilihUrl = pilihImg.src;
+                document.getElementById('gambarPilihan').src = pilihUrl;
+                document.getElementById('gambarPilihann').src = pilihUrl;
+                document.getElementById('thetitle').innerHTML = 'Guess Who ?';
+                document.getElementById('btnpilihan').style.display = 'block';
+                document.getElementById('pilihann').style.display = 'block';
+                alert('Kamu berhasil memilih benda kamu!')
+                console.log('Saya sudah memilih!');
+            } else {
+                sayaPilih += 1;
+            }
+        }
+
+        // Untuk membuka pilihan pengguna
+        function bukaPilihan() {
+            document.getElementById('pilihan').style.display = 'block';
+        }
+
+        // Untuk menutup pilihan pengguna
+        function tutupPilihan() {
+            document.getElementById('pilihan').style.display = 'none';
+        }
+
+        // Untuk menutup pilihan pengguna (pertama kali)
+        function tutupPilihann() {
+            document.getElementById('pilihann').style.display = 'none';
+        }
+
+        // Untuk menyembunyikan gambar (ganti jadi x)
+        function hide(id) {
+
+            // Mendapatkan id gambar yang diklik
+            var theimg = document.getElementById('img' + id);
+            var imgurl = theimg.src;
+
+            if ( kesempatanPilih > 0 && kesempatanPilih != 20 && imgurl != 'https://i.ibb.co/Fw0vkfM/20240427-140650.jpg' ) {
+                kesempatanPilih -= 1;
+                var gantiImg = document.getElementById('img' + id);
+                gantiImg.src = 'https://i.ibb.co/Fw0vkfM/20240427-140650.jpg';
+                var gantiDiv = document.getElementById('div' + id);
+                gantiDiv.style.cursor = "not-allowed";
+
+                var ditutup = 20 - kesempatanPilih - 1;
+                console.log('Aku sudah menutup gambar sebanyak ' + ditutup + ' kali');
+            } else if ( kesempatanPilih === 20 ) { // Hanya untuk saat pengguna pertama kali klik gambar (memilih tebakan mereka/memilih bendanya)
+                kesempatanPilih -= 1;
+            } else { // Memunculkan tebakan terakhir pengguna (end)
+
+                if ( imgurl === 'https://i.ibb.co/Fw0vkfM/20240427-140650.jpg' ) {
+                    var akuDanKamu = 'I LOVE YOU'; // Console log gak guna tapi bikin sayang hehe <3
+                } else {
+                    var lastImg = document.getElementById('img' + id);
+                    var lastUrl = lastImg.src;
+                    var divEnd = document.getElementById('end');
+                    divEnd.style.display = 'block';
+                    var gambarLast = document.getElementById('gambarLast');
+                    gambarLast.src = lastUrl;
+                    console.log('Game berakhir!');
+                }
+            }
+        }
+
+        // Memainkan audio saat btn di klik
+        function playAudio() {
+            var audio1 = document.getElementById('myaudio1');
+            audio1.play();
+        }
+
+        // Untuk reload/refresh web
+        function reloadWeb() {
+            location.reload();
+        }
+
+        // AH AH AH AH
+    </script>
+</body>
+</html>
