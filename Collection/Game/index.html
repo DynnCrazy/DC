@@ -19,6 +19,7 @@
     <script src="../../Ast/Script/Javascript/script.js" defer></script>
     <script src="../../Ast/Script/Javascript/search.js" defer></script>
     <script src="../../Ast/Script/Javascript/shortcut.js" defer></script>
+    <script src="../../Ast/Script/Javascript/parameter.js" defer></script>
     <script src="../../Ast/Script/Javascript/collection-game.js" defer></script>
 </head>
 <body>
@@ -49,11 +50,11 @@
     </header>
 
     <main id="centerWeb">
-        <h1 class="mycolor" style="text-align: center;">My Film List</h1>
+        <h1 class="mycolor" style="text-align: center;">My Game List</h1>
         <br>
 
-        <div id="infoFilm">
-            <a href="#" onclick="closeFilmCont()" class="tutup-on-search-div"><i class="fa fa-close icon-close-in-search"></i></a>
+        <div id="infoGame">
+            <a href="#" onclick="closeGameCont()" class="tutup-on-search-div"><i class="fa fa-close icon-close-in-search"></i></a>
             <div class="cont-myrate">
             <div class="cont-my-rating-f">
                 <div class="divinmyrate1">
@@ -68,71 +69,46 @@
             </div>
         </div>
 
-        <div class="cont-myfilmlist">
+        <div class="gameccard">
+            <div class="gamecard-c">
+                <h3 class="title-gamecard-c">Android:</h3>
+                <div class="gamecard-c-c">
+                    <div class="gamecard-c-games">
 
-            <div class="cont-myf"  id="kungfu_panda" onclick="openFilmCont(); showMovieInfo('kungfu_panda')">
-                <div class="in-cont-myf">
-                    <img src="https://i.ibb.co/Lk9SbNb/20240421-120331.png" alt="Poster" class="img-in-poster-mf">
+                        <div class="container-games-img-c" id="free_fire" onclick="openGameCont(); showGameInfo('free_fire')"> 
+                           <img src="../../Ast/Image/dc-logo-jpg.jpg" id="img_free_fire" class="imggames-c" alt="Games">
+                        </div>
+                        <div class="container-games-img-c" id="mobile_legends" onclick="openGameCont(); showGameInfo('mobile_legends')"> 
+                            <img src="../../Ast/Image/dc-logo-jpg.jpg" id="img_mobile_legends"class="imggames-c" alt="Games">
+                        </div>
+                        <div class="container-games-img-c" id="fc_mobile" onclick="openGameCont(); showGameInfo('fc_mobile')"> 
+                            <img src="../../Ast/Image/dc-logo-jpg.jpg" id="img_fc_mobile"class="imggames-c" alt="Games">
+                        </div>
+                        <div class="container-games-img-c" id="subway_surfers" onclick="openGameCont(); showGameInfo('subway_surfers')"> 
+                            <img src="../../Ast/Image/dc-logo-jpg.jpg" id="img_subway_surfers"class="imggames-c" alt="Games">
+                        </div>
+                        <div class="container-games-img-c" id="stumble_guys" onclick="openGameCont(); showGameInfo('stumble_guys')"> 
+                            <img src="../../Ast/Image/dc-logo-jpg.jpg" id="img_stumble_guys" class="imggames-c" alt="Games">
+                        </div>
+                        <div class="container-games-img-c" id="pou" onclick="openGameCont(); showGameInfo('pou')"> 
+                            <img src="../../Ast/Image/dc-logo-jpg.jpg" id="img_pou" class="imggames-c" alt="Games">
+                        </div>
+                        <div class="container-games-img-c" id="among_us" onclick="openGameCont(); showGameInfo('among_us')"> 
+                            <img src="../../Ast/Image/dc-logo-jpg.jpg" id="img_among_us" class="imggames-c" alt="Games">
+                        </div>
+                        <div class="container-games-img-c" id="blood_strike" onclick="openGameCont(); showGameInfo('blood_strike')"> 
+                            <img src="../../Ast/Image/dc-logo-jpg.jpg" id="img_blood_strike" class="imggames-c" alt="Games">
+                        </div>
+                        <div class="container-games-img-c" id="citampi_stories" onclick="openGameCont(); showGameInfo('citampi_stories')"> 
+                            <img src="../../Ast/Image/dc-logo-jpg.jpg" id="img_citampi_stories" class="imggames-c" alt="Games">
+                        </div>
+                        <div class="container-games-img-c" id="dadish_3d" onclick="openGameCont(); showGameInfo('dadish_3d')"> 
+                            <img src="../../Ast/Image/dc-logo-jpg.jpg" id="img_dadish_3d" class="imggames-c" alt="Games">
+                        </div>
+
+                    </div>
                 </div>
-                <p class="title-mfl">Kungfu Panda<p>
             </div>
-
-            <div class="cont-myf"  id="kungfu_panda_2" onclick="openFilmCont(); showMovieInfo('kungfu_panda_2')">
-                <div class="in-cont-myf">
-                    <img src="https://i.ibb.co/MnPMmR1/20240421-120338.png" alt="Poster" class="img-in-poster-mf">
-                </div>
-                <p class="title-mfl">Kungfu Panda 2<p>
-            </div>
-
-            <div class="cont-myf" id="kungfu_panda_3" onclick="openFilmCont(); showMovieInfo('kungfu_panda_3')">
-                <div class="in-cont-myf">
-                    <img src="https://i.ibb.co/d5RPzD4/20240421-120343.png" alt="Poster" class="img-in-poster-mf">
-                </div>
-                <p class="title-mfl">Kungfu Panda 3<p>
-            </div>
-
-            <div class="cont-myf" id="avatar" onclick="openFilmCont(); showMovieInfo('avatar')">
-                <div class="in-cont-myf">
-                    <img src="https://i.ibb.co/51L5qXj/20240421-120211.png" alt="Poster" class="img-in-poster-mf">
-                </div>
-                <p class="title-mfl">Avatar<p>
-            </div>
-
-            <div class="cont-myf" id="mr_bean_holiday" onclick="openFilmCont(); showMovieInfo('mr_bean_holiday')">
-                <div class="in-cont-myf">
-                    <img src="https://i.ibb.co/51L5qXj/20240421-120211.png" alt="Poster" class="img-in-poster-mf">
-                </div>
-                <p class="title-mfl">Mr Bean Holiday<p>
-            </div>
-
-            <div class="cont-myf" id="dilan_1990" onclick="openFilmCont(); showMovieInfo('dilan_1990')">
-                <div class="in-cont-myf">
-                    <img src="https://i.ibb.co/3vGZjFf/20240421-120250.png" alt="Poster" class="img-in-poster-mf">
-                </div>
-                <p class="title-mfl">Dilan 1990<p>
-            </div>
-
-            <div class="cont-myf" id="dilan_1991" onclick="openFilmCont(); showMovieInfo('dilan_1991')">
-                <div class="in-cont-myf">
-                    <img src="https://i.ibb.co/1fYDMk9/20240421-120259.png" alt="Poster" class="img-in-poster-mf">
-                </div>
-                <p class="title-mfl">Dilan 1991<p>
-            </div>
-
-            <div class="cont-myf" id="milea_suara_dari_dilan" onclick="openFilmCont(); showMovieInfo('milea_suara_dari_dilan')">
-                <div class="in-cont-myf">
-                    <img src="https://i.ibb.co/TWs8YDN/20240421-120315.png" alt="Poster" class="img-in-poster-mf">
-                </div>
-                <p class="title-mfl">Milea Suara Dari Dilan<p>
-            </div>
-
-            <div class="cont-myf" id="upin_ipin_keris_st" onclick="openFilmCont(); showMovieInfo('upin_ipin_keris_st')">
-                <div class="in-cont-myf">
-                    <img src="https://i.ibb.co/dLwbQpv/20240421-120239.png" alt="Poster" class="img-in-poster-mf">
-                </div>
-                <p class="title-mfl">Upin & Ipin : Keris Siamang Tunggal<p>
-            </div>
-
         </div>
 
         <br><br><br><br><br>
@@ -160,14 +136,17 @@
     </footer>
 
     <script>
+        /*
         window.onload = function() {
           alert('Jika gambar poster tidak muncul, mohon tunggu terlebih dahulu. Jika terjadi tetap tidak muncul atau eror, mohon load web ini!');
         };
+        */
     </script>
 
     <script src="../../Ast/Script/Javascript/script.js"></script>
     <script src="../../Ast/Script/Javascript/search.js"></script>
     <script src="../../Ast/Script/Javascript/shortcut.js"></script>
+    <script src="../../Ast/Script/Javascript/parameter.js"></script>
     <script src="../../Ast/Script/Javascript/collection-game.js"></script>
     
 </body>
