@@ -178,7 +178,7 @@
     background-color: #0095ff;
     border: none;
     width: 450px;
-    height: 30px;
+    height: 35px;
     color: white;
     outline: none;
     border-radius: 3px;
@@ -203,13 +203,14 @@
     margin: 5px 0 0 -225px;
     padding-top: 10px;
     padding-bottom: 15px;
+    display: none;
 }
 
 /* === Untuk Hp === */
 @media only screen and (max-width: 767px) {
 
     .sidebar {
-        height: 53%; /* 40% */
+        height: 48%; /* 40% */
     }
 
     .icon-close-in-search {

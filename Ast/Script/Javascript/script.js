@@ -1,4 +1,24 @@
-document.getElementById('ftrcopy').innerHTML = "Copyright 2024 - Design by Dyn Crazy";
+document.getElementById('ftrcopy').innerHTML = "&copy Copyright 2024 | Made with ❤";
+
+var urlParams = new URLSearchParams(window.location.search);
+
+    // Memeriksa apakah parameter ada
+    if (urlParams.has('content')) {
+        var whatdisplaycontent = urlParams.get('content').toLowerCase();
+        console.log('Paramter ditemukan!');
+
+        if (whatdisplaycontent === 'none') {
+            document.getElementById('topWeb').style.display = 'none';
+            document.getElementById('centerWeb').style.display = 'none';
+            document.getElementById('buttomWeb').style.display = 'none';
+            console.log('Content: none');
+        } else {
+            console.log('Content: display');
+        }
+
+    } else {
+        var PlissJanganPergi = 'Aku mungkin akan rindu...';
+    }
 
 const toggleButton = document.getElementById('theme-toggle');
 const body = document.body;
@@ -10,7 +30,7 @@ const body = document.body;
     }
 
     // Function to toggle between dark and light mode
-    function toggleMode() {
+    function ttoggleMode() {
         if (body.classList.contains('dark-mode')) {
             body.classList.replace('dark-mode', 'light-mode');
             localStorage.setItem('theme', 'light-mode');
@@ -27,8 +47,14 @@ const body = document.body;
         }
     }
 
+
 // Event listener for theme toggle button
 toggleButton.addEventListener('click', toggleMode);
+
+function toggleMode() {
+    alert('Segera hadir!');
+    console.log('Fitur ini akan segera tersedia!');
+}
 
 function comingSoon() {
     alert("Segera hadir!");

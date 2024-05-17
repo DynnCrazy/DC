@@ -314,6 +314,62 @@
     width: 100%;
     border-radius: 2px;
 }
+.gameccard {
+    display: flex;
+    justify-content: center;
+}
+.gamecard-c {
+    background-color: #0095ff;
+    width: 95%;
+    height: 250px;
+    justify-content: center;
+    border-radius: 6px;
+}    
+.gamecard-c-c {
+    display: flex;
+    justify-content: center;
+}
+.title-gamecard-c {
+    margin-left: 35px;
+    margin-top: 10px;
+}
+.gamecard-c-games {
+    display: flex;
+    background-color: #007cd5;
+    width: 95%;
+    height: 180px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin-top: -10px;
+    border-radius: 2px;
+}
+.gamecard-c-games::-webkit-scrollbar {
+    width: 20px;
+    height: 20px;
+}
+.gamecard-c-games::-webkit-scrollbar-thumb {
+    background-color: #0063aa;
+    border-radius: 2px;
+    border: 2px solid transparent;
+}
+.container-games-img-c {
+    margin: 15px;
+    cursor: pointer;
+}
+.imggames-c {
+    width: 130px;
+    border-radius: 6px;
+}
+#infoGame {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    top: 0;
+    z-index: 9999;
+    position: fixed;
+    display: none;
+}
 
 /* === Untuk Hp === */
 @media only screen and (max-width: 767px) {
@@ -409,16 +465,6 @@
         border-radius: 4px;
         margin-top: 4px;
     }
-
-    #infoFilm {
-        height: 100%;
-        width: 100%;
-        background-color: rgb(0, 0, 0);
-        top: 0;
-        z-index: 9999;
-        position: fixed;
-        display: none;
-    }
     .cont-myrate {
         width: 100%;
         display: flex;
@@ -461,5 +507,47 @@
         padding: 7px;
         margin: 7px;
         font-weight: normal;
+    }
+
+
+    .gamecard-c {
+        background-color: #0095ff;
+        width: 90%;
+        height: 140px;
+        justify-content: center;
+        border-radius: 6px;
+    }    
+    .title-gamecard-c {
+        margin-left: 20px;
+        margin-top: 7px;
+        font-size: 15px;
+    }
+    .gamecard-c-games {
+        display: flex;
+        background-color: #007cd5;
+        width: 90%;
+        height: 85px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        margin-top: -10px;
+        border-radius: 2px;
+    }
+    .gamecard-c-games::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+    }
+    .gamecard-c-games::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        border-radius: 2px;
+        border: 2px solid transparent;
+    }
+    .container-games-img-c {
+        margin: 10px;
+        cursor: pointer;
+    }
+    .imggames-c {
+        width: 65px;
+        border-radius: 6px;
     }
 }

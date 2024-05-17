@@ -15,6 +15,7 @@ const data = [
     { name: "Top Web", link: "#topWeb" },
     { name: "Center Web", link: "#centerWeb" },
     { name: "Buttom Web", link: "#buttomWeb" },
+    { name: "Hidden Content", link: "?content=none" },
     { name: "End", link: "/easter-egg-in-here.html" }
 ];
 
@@ -34,6 +35,12 @@ function search() {
     const input = document.getElementById("searchInput").value.toLowerCase();
     const searchResults = document.getElementById("searchResults");
     searchResults.innerHTML = '';
+
+    if (input === '') {
+        document.getElementById('searchResults').style.display = 'none';
+    } else {
+        document.getElementById('searchResults').style.display = 'block';
+    }
 
     // Filter data sesuai dengan input
     const results = data.filter(item => item.name.toLowerCase().includes(input));
