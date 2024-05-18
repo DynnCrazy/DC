@@ -1,57 +1,29 @@
-const movies = {
+const games = {
     free_fire: {
-        title: "Kungfu Panda",
-        rating: 0.0,
-        description: "Description in here...",
-        poster: "https://i.ibb.co/Lk9SbNb/20240421-120331.png"
+        judul: "Free Fire",
+        pengembang: "Garena",
+        deskripsi: "-",
+        dimainkan: "23 Maret 2018",
+        waktu: "300+ Jam",
+        nama: "DeadEye !? (ID: 139433496)",
+        progress: "-",
+        achivement: "-",
+        rating: 10,
+        link: "-",
+        image: "-"
     },
-    kungfu_panda_2: {
-        title: "Kungfu Panda 2",
-        rating: 0.0,
-        description: "Description in here...",
-        poster: "https://i.ibb.co/Lk9SbNb/20240421-120331.png"
-    },
-    kungfu_panda_3: {
-        title: "Kungfu Panda 3",
-        rating: 0.0,
-        description: "Description in here...",
-        poster: "https://i.ibb.co/Lk9SbNb/20240421-120331.png"
-    },
-    avatar: {
-        title: "Avatar",
-        rating: 0.0,
-        description: "Description in here...",
-        poster: "https://i.ibb.co/51L5qXj/20240421-120211.png"
-    },
-    mr_bean_holiday: {
-        title: "Mr Bean Holiday",
-        rating: 0.0,
-        description: "Description in here...",
-        poster: "https://i.ibb.co/Lk9SbNb/20240421-120331.png"
-    },
-    dilan_1990: {
-        title: "Dilan 1990",
-        rating: 0.0,
-        description: "Description in here...",
-        poster: "https://i.ibb.co/Lk9SbNb/20240421-120331.png"
-    },
-    dilan_1991: {
-        title: "Dilan 1991",
-        rating: 0.0,
-        description: "Description in here...",
-        poster: "https://i.ibb.co/Lk9SbNb/20240421-120331.png"
-    },
-    milea_suara_dari_dilan: {
-        title: "Milea Suara Dari Dilan",
-        rating: 0.0,
-        description: "Description in here...",
-        poster: "https://i.ibb.co/Lk9SbNb/20240421-120331.png"
-    },
-    upin_ipin_keris_st: {
-        title: "Upin & Ipin",
-        rating: 0.0,
-        description: "Description in here...",
-        poster: "https://i.ibb.co/dLwbQpv/20240421-120239.png"
+    mobile_legends: {
+        judul: "Mobile Legends",
+        pengembang: "Moonton",
+        deskripsi: "-",
+        dimainkan: "2018",
+        waktu: "-",
+        nama: "-",
+        progress: "-",
+        achivement: "-",
+        rating: 10,
+        link: "-",
+        image: "-"
     }
 };
 
@@ -65,13 +37,110 @@ function closeGameCont() {
     document.getElementById('infoGame').style.display = 'none';
     var body = document.getElementsByTagName('body')[0];
     body.style.overflow = 'auto';
+    clearGameInfo();
+}
+
+function clearGameInfo() {
+    const infoDiv = document.getElementById('infoGame');
+    infoDiv.querySelector('h2').textContent = 'Error...';
+    infoDiv.querySelector('.p1').textContent = '';
+    infoDiv.querySelector('.p2').textContent = '';
+    infoDiv.querySelector('.p3').textContent = '';
+    infoDiv.querySelector('.p4').textContent = '';
+    infoDiv.querySelector('.p5').textContent = '';
+    infoDiv.querySelector('.p6').textContent = '';
+    infoDiv.querySelector('.p7').textContent = '';
+    infoDiv.querySelector('.p8').textContent = '';
+    infoDiv.querySelector('.alinkkk').textContent = '';
 }
 
 function showGameInfo(gameId) {
-    const movie = movies[gameId];
+    const game = games[gameId];
     const infoDiv = document.getElementById('infoGame');
-    infoDiv.querySelector('h2').textContent = movie.title;
-    infoDiv.querySelector('h5').textContent = `My Rating: ${movie.rating}`;
-    infoDiv.querySelector('p').textContent = movie.description;
-    infoDiv.querySelector('img').src = movie.poster;
+    infoDiv.querySelector('h2').textContent = game.judul;
+
+    if (game.pengembang != '-') {
+        infoDiv.querySelector('.p1').textContent = 'Dikembangkan: ' + game.pengembang;
+    } else {
+        const wkwkwkwkkwkw = 'LUCU';
+    }
+
+    if (game.deskripsi != '-') {
+        infoDiv.querySelector('.p2').textContent = 'Deskripsi: ' + game.deskripsi;
+    } else {
+        const wkwkwkwkkwkw = 'LUCU';
+    }
+
+    if (game.dimainkan != '-') {
+        infoDiv.querySelector('.p3').textContent = 'Dimainkan pada: ' + game.dimainkan;
+    } else {
+        const wkwkwkwkkwkw = 'LUCU';
+    }
+
+    if (game.waktu != '-') {
+        infoDiv.querySelector('.p4').textContent = 'Waktu Bermain: ' + game.waktu;
+    } else {
+        const wkwkwkwkkwkw = 'LUCU';
+    }
+    
+    if (game.nama != '-') {
+        infoDiv.querySelector('.p5').textContent = 'Nama: ' + game.nama;
+    } else {
+        const wkwkwkwkkwkw = 'LUCU';
+    }
+
+    if (game.progress != '-') {
+        infoDiv.querySelector('.p6').textContent = 'Progress Game: ' + game.progress;
+    } else {
+        const wkwkwkwkkwkw = 'LUCU';
+    }
+
+    if (game.achivement != '-') {
+        infoDiv.querySelector('.p7').textContent = 'Achivement Game: ' + game.achivement;
+    } else {
+        const wkwkwkwkkwkw = 'LUCU';
+    }
+
+    if (game.rating != '-') {
+        infoDiv.querySelector('.p8').textContent = 'My Rating: ' + game.rating;
+    } else {
+        const wkwkwkwkkwkw = 'LUCU';
+    }
+
+    if (game.link != '-') {
+        infoDiv.querySelector('.alinkkk').href = game.link;
+        infoDiv.querySelector('.alinkkk').textContent = 'Link';
+    } else {
+        infoDiv.querySelector('.alinkkk').href = "/index.html";
+        infoDiv.querySelector('.alinkkk').textContent = 'Link';
+    }
+
+    if (game.image != '-') {
+        infoDiv.querySelector('img').src = game.image;
+    } else {
+        var theimage = document.getElementById('img_' + gameId).src;
+        infoDiv.querySelector('img').src = theimage;
+    }
 }
+
+function getHashValue() {
+    var hash = window.location.hash;
+
+    if (hash.startsWith('#')) {
+        hash = hash.substring(1);
+    }
+
+    return hash;
+}
+
+window.addEventListener('load', function() {
+    var hash = getHashValue();
+    
+    if ( hash === '') {
+        var xnxx = 'Upss...';
+    } else {
+        openGameCont();
+        showGameInfo(hash);
+    }
+
+});

@@ -1,22 +1,33 @@
 // Data yang akan Anda cari (contoh: daftar nama dan link)
 const data = [
-    { name: "Menu", link: "/index.html" },
-    { name: "Skill", link: "/index.html#skill" },
-    { name: "Project", link: "/index.html#project" },
-    { name: "Collection", link: "/index.html#collection" },
-    { name: "About Me", link: "/index.html#about" },
-    { name: "Contact", link: "/index.html#contact" },
-    { name: "My Film", link: "/Collection/Film/index.html" },
-    { name: "YouTube", link: "/Links/youtube.html" },
-    { name: "Instagram", link: "/Links/instagram.html" },
-    { name: "TikTok", link: "/Links/tiktok.html" },
-    { name: "Facebook", link: "/Links/facebook.html" },
-    { name: "GitHub", link: "/Links/github.html" },
-    { name: "Top Web", link: "#topWeb" },
-    { name: "Center Web", link: "#centerWeb" },
-    { name: "Buttom Web", link: "#buttomWeb" },
-    { name: "Hidden Content", link: "?content=none" },
-    { name: "End", link: "/easter-egg-in-here.html" }
+    // Main
+    { name: "Menu", link: "/index.html", klik: '-' },
+    { name: "Skill", link: "/index.html#skill", klik: '-' },
+    { name: "Project", link: "/index.html#project", klik: '-' },
+    { name: "Collection", link: "/index.html#collection", klik: '-' },
+    { name: "About Me", link: "/index.html#about", klik: '-' },
+    { name: "Contact", link: "/index.html#contact", klik: '-' },
+    // My Film List
+    { name: "My Film List", link: "/Collection/Film/index.html", klik: '-' },
+    // My Game List
+    { name: "My Game List", link: "/Collection/Game/index.html", klik: '-' },
+    { name: "Free Fire", link: "/Collection/Game/index.html#free_fire", klik: '-' },
+    { name: "Mobile Legends", link: "/Collection/Game/index.html#mobile_legends", klik: '-' },
+    // Social Media
+    { name: "YouTube", link: "/Links/youtube.html", klik: '-' },
+    { name: "Instagram", link: "/Links/instagram.html", klik: '-' },
+    { name: "TikTok", link: "/Links/tiktok.html", klik: '-' },
+    { name: "Facebook", link: "/Links/facebook.html", klik: '-' },
+    { name: "GitHub", link: "/Links/github.html", klik: '-' },
+    // Web Structure
+    { name: "Top Web", link: "#topWeb", klik: '-' },
+    { name: "Center Web", link: "#centerWeb", klik: '-' },
+    { name: "Buttom Web", link: "#buttomWeb", klik: '-' },
+    // Function
+    { name: "Hidden Content", link: "?content=none", klik: '-' },
+    { name: "Hello World!", link: "javascript:alert('Hello World!');", klik: '-' },
+    // End
+    { name: "End", link: "/easter-egg-in-here.html", klik: '-' }
 ];
 
 // Gak ada gunanya

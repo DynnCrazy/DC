@@ -359,7 +359,8 @@
 }
 .imggames-c {
     width: 130px;
-    border-radius: 6px;
+    border-radius: 3px;
+    border: 1px solid #ffffff20;
 }
 #infoGame {
     height: 100%;
@@ -548,6 +549,6 @@
     }
     .imggames-c {
         width: 65px;
-        border-radius: 6px;
+        border-radius: 3px;
     }
 }
