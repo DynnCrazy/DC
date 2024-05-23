@@ -13,6 +13,17 @@ const data = [
     { name: "My Game List", link: "/Collection/Game/index.html", klik: '-' },
     { name: "Free Fire", link: "/Collection/Game/index.html#free_fire", klik: '-' },
     { name: "Mobile Legends", link: "/Collection/Game/index.html#mobile_legends", klik: '-' },
+    { name: "FC Mobile", link: "/Collection/Game/index.html#fc_mobile", klik: '-' },
+    { name: "Subway Surfers", link: "/Collection/Game/index.html#subway_surfers", klik: '-' },
+    { name: "Stumble Guys", link: "/Collection/Game/index.html#stumble_guys", klik: '-' },
+    { name: "Pou", link: "/Collection/Game/index.html#pou", klik: '-' },
+    { name: "Among Us", link: "/Collection/Game/index.html#among_us", klik: '-' },
+    { name: "Blood Strike", link: "/Collection/Game/index.html#blood_strike", klik: '-' },
+    { name: "Citampi Stories", link: "/Collection/Game/index.html#citampi_stories", klik: '-' },
+
+    { name: "Grand Theft Auto: San Andreas", link: "/Collection/Game/index.html#gta_sa", klik: '-' },
+
+    { name: "Doodle Champions Island", link: "/Collection/Game/index.html#doodle_champions_island", klik: '-' },
     // Social Media
     { name: "YouTube", link: "/Links/youtube.html", klik: '-' },
     { name: "Instagram", link: "/Links/instagram.html", klik: '-' },

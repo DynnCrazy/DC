@@ -1,10 +1,11 @@
 const games = {
+    // ======= MOBILE
     free_fire: {
         judul: "Free Fire",
         pengembang: "Garena",
         deskripsi: "-",
         dimainkan: "23 Maret 2018",
-        waktu: "300+ Jam",
+        waktu: "400+ Jam",
         nama: "DeadEye !? (ID: 139433496)",
         progress: "-",
         achivement: "-",
@@ -20,6 +21,113 @@ const games = {
         waktu: "-",
         nama: "-",
         progress: "-",
+        achivement: "-",
+        rating: 10,
+        link: "-",
+        image: "-"
+    },
+    fc_mobile: {
+        judul: "FC Mobile",
+        pengembang: "Electronic Arts",
+        deskripsi: "-",
+        dimainkan: "2023",
+        waktu: "-",
+        nama: "-",
+        progress: "-",
+        achivement: "-",
+        rating: 10,
+        link: "-",
+        image: "-"
+    },
+    subway_surfers: {
+        judul: "Subway Surfers",
+        pengembang: "",
+        deskripsi: "-",
+        dimainkan: "-",
+        waktu: "-",
+        nama: "-",
+        progress: "-",
+        achivement: "-",
+        rating: 10,
+        link: "-",
+        image: "-"
+    },
+    stumble_guys: {
+        judul: "Stumble Guys",
+        pengembang: "-",
+        deskripsi: "-",
+        dimainkan: "2020",
+        waktu: "120+ Jam",
+        nama: "-",
+        progress: "-",
+        achivement: "-",
+        rating: 10,
+        link: "-",
+        image: "-"
+    },
+    pou: {
+        judul: "Pou",
+        pengembang: "-",
+        deskripsi: "-",
+        dimainkan: "-",
+        waktu: "-",
+        nama: "-",
+        progress: "-",
+        achivement: "-",
+        rating: 10,
+        link: "-",
+        image: "-"
+    },
+    among_us: {
+        judul: "Among Us",
+        pengembang: "-",
+        deskripsi: "Game saling fitnah",
+        dimainkan: "19 Desember 2020",
+        waktu: "-",
+        nama: "-",
+        progress: "-",
+        achivement: "-",
+        rating: 10,
+        link: "-",
+        image: "-"
+    },
+    blood_strike: {
+        judul: "Blood Strike",
+        pengembang: "-",
+        deskripsi: "-",
+        dimainkan: "2024",
+        waktu: "-",
+        nama: "-",
+        progress: "-",
+        achivement: "-",
+        rating: 10,
+        link: "-",
+        image: "-"
+    },
+    citampi_stories: {
+        judul: "Citampi Stories",
+        pengembang: "Ikan Asin Production",
+        deskripsi: "-",
+        dimainkan: "2023",
+        waktu: "-",
+        nama: "-",
+        progress: "95%",
+        achivement: "-",
+        rating: 10,
+        link: "-",
+        image: "-"
+    },
+    // ======= PC
+    // ======= CONSOLE
+    // ======= WEBSITE
+    doodle_champions_island: {
+        judul: "Doodle Champions Island",
+        pengembang: "-",
+        deskripsi: "-",
+        dimainkan: "2020",
+        waktu: "-",
+        nama: "-",
+        progress: "100%",
         achivement: "-",
         rating: 10,
         link: "-",
@@ -52,6 +160,7 @@ function clearGameInfo() {
     infoDiv.querySelector('.p7').textContent = '';
     infoDiv.querySelector('.p8').textContent = '';
     infoDiv.querySelector('.alinkkk').textContent = '';
+    infoDiv.querySelector('img').src = '';
 }
 
 function showGameInfo(gameId) {

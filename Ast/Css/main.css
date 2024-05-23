@@ -291,6 +291,9 @@
     position: relative;
     padding: 10px;
 }
+.divinmyrate2 p {
+    margin: 0px;
+}
 .theratingf {
     position: absolute;
     bottom: 0; 
@@ -356,6 +359,10 @@
 .container-games-img-c {
     margin: 15px;
     cursor: pointer;
+    transition: container-games-img-c 0.5s ease;
+}
+.container-games-img-c:hover {
+    filter: grayscale(65%);
 }
 .imggames-c {
     width: 130px;
@@ -546,6 +553,7 @@
     .container-games-img-c {
         margin: 10px;
         cursor: pointer;
+        transition: container-games-img-c 0.5s ease;
     }
     .imggames-c {
         width: 65px;
