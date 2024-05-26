@@ -36,6 +36,9 @@
 .inilink {
     cursor: pointer;
 }
+#logolandd {
+    cursor: not-allowed;
+}
 
 .btmnavbar {
     align-items: center;
@@ -156,6 +159,7 @@
     z-index: 9999;
     position: fixed;
     display: none;
+    transition: display 0.5s ease;
 }
 .icon-close-in-search {
     font-size: 30px;

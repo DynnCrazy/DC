@@ -37,6 +37,11 @@ p {
     margin-bottom: 10px;
 }
 
+h1 {
+    margin: -10px;
+    margin-bottom: 5px;
+}
+
 h2 {
     margin-bottom: 17px;
 }

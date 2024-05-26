@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyn Crazy</title>
+    <link rel="icon" type="image/png" href="../web-icon.png">
+    <meta name="description" content="Website Dyn Crazy">
+    <meta name="robots" content="index, follow">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <!-- Opt -->
+    <link rel="stylesheet" href="../Ast/Css/style.css">
+    <link rel="stylesheet" href="../Ast/Css/header.css">
+    <link rel="stylesheet" href="../Ast/Css/main.css">
+    <link rel="stylesheet" href="../Ast/Css/footer.css">
+    <link rel="stylesheet" href="../Ast/Css/darklightmode.css">
+    <script src="../Ast/Script/Javascript/script.js" defer></script>
+    <script src="../Ast/Script/Javascript/search.js" defer></script>
+    <script src="../Ast/Script/Javascript/shortcut.js" defer></script>
+    <script src="../Ast/Script/Javascript/parameter.js" defer></script>
+    <script src="../Ast/Script/Json/my-blog.json" defer></script>
+    <script src="../Ast/Script/Javascript/blog.js" defer></script>
+</head>
+<body>
+    <header id="topWeb">         
+        <div class="navbar" id="navbar">
+            <span class="name"><a href="../index.html" class="name-links">Dyn Crazy</a></span>
+            <span class="menu-icon"><span id="logolandd" onclick="toggleMode()" class="inilink"><i class="fa fa-moon-o"></i></span>&emsp;<span id="menu-icon" onclick="toggleSidebar()" class="inilink">&#9776;</span></span>
+        </div>
+        <div id="btmsbar" class="btmnavbar">.</div>
+        <div class="sidebarx" id="sidebar">
+            <a href="../index.html" onclick="toggleSidebar()" id="sidebar1" class="sidebar-a"><i class="fas fa-home icon-in-sidebar"></i>&ensp; Main Menu</a>
+            <a onclick="openSearchCont()" id="sidebar5" class="sidebar-a" style="cursor: pointer;"><i class="fa fa-search icon-in-sidebar"></i>&ensp; Search</a>
+            <a onclick="toggleSidebar()" id="sidebar6" class="sidebar-a" style="cursor: pointer;"><i class="fa fa-close icon-in-sidebar"></i>&ensp; Tutup</a>
+            <br>
+        </div>
+        <div class="search-div" id="searchDiv">
+            <a href="#" onclick="closeSearchCont()" class="tutup-on-search-div"><i class="fa fa-close icon-close-in-search"></i></a>
+            <br>
+            <br>
+            <div class="cont-search-input">
+                <input type="text" id="searchInput" placeholder="Masukkan kata kunci pencarian" class="input-search">
+                <br><br>
+                <div class="cont-search-result">
+                    <div id="searchResults" class="result-search"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="centerWeb">
+        <h1 class="mycolor" style="text-align: center;">Blog</h1>
+        <br>
+
+        <div class="the-cont-blog">
+
+            <div class="content-the-blog news-the-blog">
+                <h3 class="ttl-cate-blogs">News:</h3>
+
+                <!--
+                        || Olahraga         == b-olahraga
+                        || Game             == b-game
+                        || Hiburan          == b-hiburan
+                        || Film             == -- || --
+                        || Politik          == -- || --
+                        || Musik            == -- || --
+                        || Kuliner          == -- || --
+                        || Duka             == -- || --
+                        || Viral            == -- || --
+                        || Pendidikan       == -- || --
+                        || Tutorial         == -- || --
+                        || Kehidupan        == -- || --
+                        || Seni             == -- || --
+                        || Pemerintahan     == -- || --
+                        || Random           == -- || --
+                        =====================================================================
+                        ||  Waktu            == contoh (01-02-2000 | tanggal-bulan-tahun) 
+                -->
+
+                <div id="myblog7" onclick="goToBlog('themyblog7')" class="cont-blog-1">
+                    <img id="img-myblog7" alt="Thumbnail">
+                    <h3 id="ttl-myblog7" class="title-blog">Title</h3>
+                    <h6 id="ftr-myblog7" class="footer-blog">Footer</h6>
+                </div>
+
+                <div id="myblog6" class="cont-blog-1">
+                    <img id="img-myblog6" alt="Thumbnail">
+                    <h3 id="ttl-myblog6" class="title-blog">tt6</h3>
+                    <h6 id="ftr-myblog6" class="footer-blog">Footer</h6>
+                </div>
+                <div id="myblog5" class="cont-blog-1">
+                    <img id="img-myblog5" alt="Thumbnail">
+                    <h3 id="ttl-myblog5" class="title-blog">tt5</h3>
+                    <h6 id="ftr-myblog5" class="footer-blog">Footer</h6>
+                </div>
+                <div id="myblog4" class="cont-blog-1">
+                    <img id="img-myblog4" alt="Thumbnail">
+                    <h3 id="ttl-myblog4" class="title-blog">tt4</h3>
+                    <h6 id="ftr-myblog4" class="footer-blog">Footer</h6>
+                </div>
+                <div id="myblog3" class="cont-blog-1">
+                    <img id="img-myblog3" alt="Thumbnail">
+                    <h3 id="ttl-myblog3" class="title-blog">t3</h3>
+                    <h6 id="ftr-myblog3" class="footer-blog">Footer</h6>
+                </div>
+                <div id="myblog2" class="cont-blog-1">
+                    <img id="img-myblog2" alt="Thumbnail">
+                    <h3 id="ttl-myblog2" class="title-blog">tt2</h3>
+                    <h6 id="ftr-myblog2" class="footer-blog">Footer</h6>
+                </div>
+                <div id="myblog1" class="cont-blog-1">
+                    <img id="img-myblog1" alt="Thumbnail">
+                    <h3 id="ttl-myblog1" class="title-blog">tt1</h3>
+                    <h6 id="ftr-myblog1" class="footer-blog">Footer</h6>
+                </div>
+        
+            </div>
+
+            <div class="content-the-blog">
+                <h3 class="ttl-cate-blogs">Relavan:</h3>
+
+                <div class="cont-blog-1">sjsjsi</div>
+            </div>
+
+            <div class="content-the-blog">
+                <h3 class="ttl-cate-blogs">Populer:</h3>
+
+                <div class="cont-blog-1">sjsjsi</div>
+            </div>
+
+        </div>
+
+        <div class="cont-seemore-blogs" style="display: none;">
+            <div class="seemore-blogs" onclick="comingSoon(); seeMoreBlog();">Lihat Selengkapnya...</div>
+        </div>
+
+        <center>
+        <div class="garislurus2">.</div>
+        </center>
+
+        <h3 class="ttl-cate-blogs2">Lainnya:</h3>
+
+        <div id="container" class="the-cont-blogg"></div>
+        <br><br><br><br><br>
+        
+    </main>
+
+    <footer id="buttomWeb">
+        <div class="thefooter" id="footerhtml">
+            <div class="footeratas">
+                <div class="jarak-di-fb"><a href="../easter-egg-in-here.html" class="easter-egg-in-footer">.</a></div>
+                &emsp;<a href="../Links/youtube.html"><i class="fab fa-youtube logoinfooter"></i></a>&emsp;
+                &emsp;<a href="../Links/instagram.html"><i class="fab fa-instagram logoinfooter"></i></a>&emsp;
+                &emsp;<a href="../Links/facebokk.html"><i class="fab fa-facebook logoinfooter"></i></a>&emsp;
+                &emsp;<a href="../Links/tiktok.html"><i class="fab fa-tiktok logoinfooter"></i></a>&emsp;
+            </div>
+            <div class="footertengah">
+                &emsp;<a href="#topWeb">To Top</a>&emsp;
+                &emsp;<a href="../index.html#about">About</a>&emsp;
+                &emsp;<a href="../index.html#contact">Contact</a>&emsp;
+            </div>
+            <div class="footerbawah">
+                <span class="katadi-fb" id="ftrcopy">&copy; Copyright 2024 - Now | Design by Dyn Crazy</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        /*
+        window.onload = function() {
+          alert('Jika gambar poster tidak muncul, mohon tunggu terlebih dahulu. Jika terjadi tetap tidak muncul atau eror, mohon load web ini!');
+        };
+        */
+    </script>
+
+    <script src="../Ast/Script/Javascript/script.js"></script>
+    <script src="../Ast/Script/Javascript/search.js"></script>
+    <script src="../Ast/Script/Javascript/shortcut.js"></script>
+    <script src="../Ast/Script/Javascript/parameter.js"></script>
+    <script src="../Ast/Script/Json/my-blog.json"></script>
+    <script src="../Ast/Script/Javascript/blog.js"></script>
+    
+</body>
+</html>
