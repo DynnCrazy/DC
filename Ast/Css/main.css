@@ -169,7 +169,7 @@
 
 .img-index-one {
     width: 200px;
-    margin-left: 5%;
+    margin-left: 7%;
 }
 
 .h1-index-one {
@@ -177,12 +177,12 @@
     margin-top: -70px;
 }
 .cont-p-index-one {
-    width: 100%;
+    width: 97%;
     text-align: center;
 }
 .p-index-one {
     margin-top: -100px;
-    margin-left: 280px;
+    margin-left: 310px;
 }
 .tutup-on-search-div {
     position: absolute;
@@ -593,6 +593,7 @@
         padding-top: 100px;
         text-align: center;
         display: contents;
+        margin-left: 280px;
     }
     .theskill {
         width: 90%; /* 31% */
