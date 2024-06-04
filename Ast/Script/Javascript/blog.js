@@ -80,8 +80,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function goToBlog(links) {
         window.location.href = alldata[links].url;
-        console.log(alldata);
     }
 
     window.goToBlog = goToBlog;  // Assign to window so it can be called globally
 });
+
+function toIndexBlog() {
+    window.location.href = "/Blog/Index.html";
+}

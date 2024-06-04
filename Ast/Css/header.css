@@ -154,12 +154,17 @@
 #searchDiv {
     height: 100%;
     width: 100%;
-    background-color: rgb(0, 0, 0);
+    /*background-color: rgb(0, 0, 0);*/
+
+    background: rgb(14, 14, 14);
+    background-image: linear-gradient(rgba(54, 54, 54, 0.07) .1em, transparent .1em), linear-gradient(90deg, rgba(54, 54, 54, 0.07) .1em, transparent .1em);
+    background-size: 3em 3em;
+
     top: 0;
     z-index: 9999;
     position: fixed;
     display: none;
-    transition: display 0.5s ease;
+    transition: background-image 0.5s ease;
 }
 .icon-close-in-search {
     font-size: 30px;

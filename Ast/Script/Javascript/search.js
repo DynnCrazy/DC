@@ -84,3 +84,34 @@ function search() {
 
 // Panggil fungsi search saat input berubah
 document.getElementById("searchInput").addEventListener("input", search);
+
+// Placeholder
+const inputField = document.getElementById('searchInput');
+const placeholders = ['Contact', 'Siapa Dyn Crazy ?', 'YouTube', 'Grand Theft Auto: San Andreas', 'Cara cepat miskin bagi pemula', 'Film List', 'TikTok', 'Game burik no 1 di dunia', 'Tips & trick jadi pengangguran'];
+let currentIndex = 0;
+let placeholderInterval;
+
+function changePlaceholder() {
+  currentIndex = (currentIndex + 1) % placeholders.length;
+  inputField.placeholder = placeholders[currentIndex];
+}
+
+function startPlaceholderRotation() {
+  placeholderInterval = setInterval(changePlaceholder, 2000);
+}
+
+function stopPlaceholderRotation() {
+  clearInterval(placeholderInterval);
+}
+
+// Start rotation when the page loads
+startPlaceholderRotation();
+
+// Stop rotation when user starts typing
+inputField.addEventListener('input', stopPlaceholderRotation);
+
+valuesearch = document.getElementById('searchInput').value;
+
+if (valuesearch == '') {
+    startPlaceholderRotation();
+}

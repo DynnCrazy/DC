@@ -511,6 +511,57 @@
 .imgblogweb {
     width: 400px;
 }
+.back-to-menu-blog {
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    margin: 30px;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #0095ff;
+    border: 2px solid #007dd6;
+    transition: background-color 0.3s ease;
+}
+.back-to-menu-blog:hover {
+    background-color: #0085e4;
+    color: white;
+}
+
+
+
+.input-container {
+    position: relative;
+    width: 300px;
+} 
+.input-field {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+.input-field::placeholder {
+    animation: placeholder-animation 1.5s ease-in-out infinite;
+}
+@keyframes placeholder-animation {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+  }
+  
 
 /* === Untuk Hp === */
 @media only screen and (max-width: 767px) {
@@ -696,7 +747,7 @@
 
     .content-blog {
         background-color: rgba(255, 0, 0, 0);
-        width: 90%;
+        width: 85%;
         height: auto;
         padding: 10px;
         margin-bottom: 50px;
@@ -704,5 +755,9 @@
     }
     .imgblogweb {
         width: 250px;
+    }
+    .my-title-blogs {
+        margin-top: -30px;
+        margin-bottom: -10px;
     }
 }
