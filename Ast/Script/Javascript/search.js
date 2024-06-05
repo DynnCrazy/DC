@@ -87,7 +87,7 @@ document.getElementById("searchInput").addEventListener("input", search);
 
 // Placeholder
 const inputField = document.getElementById('searchInput');
-const placeholders = ['Contact', 'Siapa Dyn Crazy ?', 'YouTube', 'Grand Theft Auto: San Andreas', 'Cara cepat miskin bagi pemula', 'Film List', 'TikTok', 'Game burik no 1 di dunia', 'Tips & trick jadi pengangguran'];
+const placeholders = ['Contact', 'Siapa Dyn Crazy ?', 'YouTube', 'Grand Theft Auto: San Andreas', 'Cara cepat miskin bagi pemula', 'Film List', 'TikTok', 'Game burik no 1 di dunia', 'Tips & trick jadi pengangguran', 'Skill', 'Kenapa cowok selalu salah ?', 'Cara membedakan kang bakso dengan intel!', 'Video viral terbaru! link mediafire!', 'Project', 'Mobile Legends: Bang Bang', 'Tutorial jadi badut untuk cewek! 100% work!', 'Kenapa upin & ipin tidak naik kelas ?', 'Blog', 'Easter Egg', 'Ronaldo Vs Messi', 'Among Us', 'Heboh! Prilly Latuconsina makan pakai tangan!', '#FREEPALESTINE', 'Bahasa pemograman Python', 'Duluan ayam apa telur ?', 'Ah ah ah', 'Indonesia merdeka tahun 1945', 'Berapa jumlah provinsi di Indonesia ?', 'So.. bakso..', 'Instagram', 'Kenapa cewek jepang `mantap` ?', 'Bocil epep meresahkan dunia!'];
 let currentIndex = 0;
 let placeholderInterval;
 

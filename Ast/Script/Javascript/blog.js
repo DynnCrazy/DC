@@ -56,17 +56,21 @@ document.addEventListener("DOMContentLoaded", function() {
                 const blogDiv = document.createElement('div');
                 blogDiv.className = 'blog-post';
                 blogDiv.innerHTML = `
+                    <div data-aos="fade-up" data-aos-duration="700">
+
                     <div class="content-the-blog">
-                    <a href="${blog.url}" style="text-decoration: none;">
-                    <div class="cont-blog-1">
-                    <center>
-                    <img src="${blog.image}" alt="Thumbnail">
-                    <h3 class="title-blog">${blog.title}</h3>
-                    <h6 class="footer-blog">${blog.author} - ${blog.created}</h6>
-                    <center>
+                        <a href="${blog.url}" style="text-decoration: none;">
+                            <div class="cont-blog-1">
+                                <center>
+                                        <img src="${blog.image}" alt="Thumbnail">
+                                        <h3 class="title-blog">${blog.title}</h3>
+                                        <h6 class="footer-blog">${blog.author} - ${blog.created}</h6>
+                                <center>
+                            </div>
+                        </a>
                     </div>
-                    </a>
-                    <div>
+
+                    </div>
                 `;
                 container.appendChild(blogDiv);
             });

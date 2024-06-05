@@ -25,10 +25,14 @@ body {
     height: 100vh;
    
     background: #333;
-    background: rgb(14, 14, 14);
-    background-image: linear-gradient(rgba(54, 54, 54, 0.07) .1em, transparent .1em), linear-gradient(90deg, rgba(54, 54, 54, 0.07) .1em, transparent .1em);
-    background-size: 3em 3em;
+    background: rgb(9, 9, 9);
+    background-image: linear-gradient(rgba(70, 70, 70, 0.07) .1em, transparent .1em), linear-gradient(90deg, rgba(70, 70, 70, 0.07) .1em, transparent .1em);
+    background-size: 4em 4em;
   }
+
+center {
+    cursor: default;
+}
 
 a {
     color: #e5e5e5;

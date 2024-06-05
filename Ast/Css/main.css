@@ -6,6 +6,11 @@
     display: none;
 }
 
+#centerWeb {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 
 
 /* =============== */
@@ -335,8 +340,8 @@
 }
 .gamecard-c {
     background-color: #0095ff;
-    width: 95%;
-    height: 250px;
+    width: 70%;
+    height: 200px;
     justify-content: center;
     border-radius: 6px;
 }    
@@ -352,7 +357,7 @@
     display: flex;
     background-color: #007cd5;
     width: 95%;
-    height: 180px;
+    height: 130px;
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
@@ -360,8 +365,8 @@
     border-radius: 2px;
 }
 .gamecard-c-games::-webkit-scrollbar {
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
 }
 .gamecard-c-games::-webkit-scrollbar-thumb {
     background-color: #0063aa;
@@ -377,7 +382,7 @@
     filter: grayscale(65%);
 }
 .imggames-c {
-    width: 130px;
+    width: 97px;
     border-radius: 3px;
     border: 1px solid #ffffff20;
 }
@@ -577,12 +582,14 @@
     }
     .img-index-one {
         width: 150px;
+        margin: 0px;
         margin-top: -50px;
+        margin-left: 20px;
     }
     .h1-index-one {
         text-align: center;
         margin-top: -40px;
-        margin-left: -45px;
+        margin-right: 40px;
     }
     .cont-p-index-one {
         width: 85%;
