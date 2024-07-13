@@ -12,7 +12,6 @@
 }
 
 
-
 /* =============== */
 /* === FORMAT FONT */
 .bold {
@@ -552,6 +551,8 @@
 .input-field::placeholder {
     animation: placeholder-animation 1.5s ease-in-out infinite;
 }
+
+
 @keyframes placeholder-animation {
     0% {
       transform: translateY(100%);
@@ -588,7 +589,7 @@
     }
     .h1-index-one {
         text-align: center;
-        margin-top: -40px;
+        margin-top: -10px;
         margin-right: 40px;
     }
     .cont-p-index-one {
