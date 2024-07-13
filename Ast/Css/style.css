@@ -22,7 +22,7 @@ body {
     height: 100vh;
    
     background: #333;
-    background: rgb(9, 9, 9);
+    background: rgb(2, 2, 2);
     background-image: linear-gradient(rgba(70, 70, 70, 0.07) .1em, transparent .1em), linear-gradient(90deg, rgba(70, 70, 70, 0.07) .1em, transparent .1em);
     background-size: 4em 4em;
   }
